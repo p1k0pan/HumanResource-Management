@@ -29,9 +29,9 @@
 
 #### 数据库逻辑结构
 
-账户（<u>员工号</u>，密码，权限）
+账户（<u>员工号</u>id，密码password，权限priority）
 
-员工（姓名，<u>员工号</u>，年龄，入职年，离职年，退休年，职称）
+员工（姓名name，<u>员工号</u>id，年龄age，入职年entry，离职年quit，退休年retire，职称position）
 
-工资（<u>员工号</u>，职务工资，补助，政府津贴，职务津贴）
+工资（<u>员工号</u>id，职务工资basic，补助subsidy，政府津贴gov_allowance，职务津贴pos_allowance）
 
