@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginPage">
+   <children>
+      <Label layoutX="68.0" layoutY="93.0" text="用户名" />
+      <TextField fx:id="text_name" layoutX="133.0" layoutY="88.0" promptText="pls input your user id" />
+      <TextField fx:id="text_pass" layoutX="133.0" layoutY="153.0" promptText="pls input your password" />
+      <Label layoutX="68.0" layoutY="158.0" text="密码" />
+      <Label layoutX="169.0" layoutY="47.0" text="登录" />
+      <Button fx:id="logbtn" layoutX="125.0" layoutY="309.0" mnemonicParsing="false" onAction="#Log" text="登录" />
+      <Button layoutX="223.0" layoutY="309.0" mnemonicParsing="false" text="重置" />
+      <Label layoutX="68.0" layoutY="230.0" text="部门" />
+      <ComboBox fx:id="cb" layoutX="133.0" layoutY="225.0" prefHeight="30.0" prefWidth="202.0" />
+   </children>
+</AnchorPane>
