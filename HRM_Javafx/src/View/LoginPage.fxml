@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginPage">
+<AnchorPane fx:id="loginpage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conLoginPage">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#42dd8838" height="325.0" layoutX="45.0" layoutY="25.0" stroke="TRANSPARENT" strokeType="INSIDE" width="300.0" />
       <Label layoutX="68.0" layoutY="93.0" text="用户名" />
@@ -15,7 +14,8 @@
       <Label layoutX="169.0" layoutY="47.0" text="登录" />
       <Button fx:id="logbtn" layoutX="119.0" layoutY="279.0" mnemonicParsing="false" onAction="#Log" text="登录" />
       <Button layoutX="223.0" layoutY="279.0" mnemonicParsing="false" text="重置" />
-      <RadioButton layoutX="97.0" layoutY="236.0" mnemonicParsing="false" text="管理部" />
-      <RadioButton layoutX="223.0" layoutY="236.0" mnemonicParsing="false" text="人事部" />
+      <RadioButton fx:id="guanli" layoutX="97.0" layoutY="236.0" mnemonicParsing="false" text="管理部" />
+      <RadioButton fx:id="renshi" layoutX="223.0" layoutY="236.0" mnemonicParsing="false" text="人事部" />
+      <Label fx:id="userconfirm" layoutX="303.0" layoutY="92.0" />
    </children>
 </AnchorPane>

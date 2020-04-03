@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../HRM_Javafx/src/Controller/conLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/Controller/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/LoginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/dao/connectAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/dao/connectAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/Controller/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/Stage/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/LoginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/dao/connectAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/dao/connectAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/META-INF/javafxProject.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/mysqlJDBC/ConnectionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/ConnectionMysql.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/MySqlCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/WorkerSarlary.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,8 +102,12 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1ZveTeld3Rqa3db4CttRx14orrv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -96,10 +125,11 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Apache Software Foundation/Tomcat 10.0/lib/mysql-connector-java-5.1.42-bin.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HRM_Javafx" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -257,6 +287,9 @@
       <workItem from="1585724009724" duration="1655000" />
       <workItem from="1585793530969" duration="13106000" />
       <workItem from="1585808532257" duration="18997000" />
+      <workItem from="1585832420504" duration="4052000" />
+      <workItem from="1585879553795" duration="8270000" />
+      <workItem from="1585909126718" duration="38000" />
     </task>
     <servers />
   </component>
@@ -276,6 +309,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="561" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1585813110296" />
+    <state x="614" y="306" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585837109747">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="614" y="306" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1585837109747" />
     <state x="648" y="72" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1585809263859">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -288,9 +325,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="515" y="79" key="DetectedRootsChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1585807825859" />
-    <state x="530" y="108" key="FileChooserDialogImpl" timestamp="1585811292578">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="509" y="105" key="FileChooserDialogImpl" timestamp="1585909162205">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="509" y="105" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1585909162205" />
     <state x="530" y="108" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1585811292578" />
     <state width="1547" height="252" key="GridCell.Tab.0.bottom" timestamp="1585830887022">
       <screen x="0" y="0" width="1600" height="860" />
