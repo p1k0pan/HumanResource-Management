@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="400.0" prefWidth="600.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE" tabMinWidth="100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conHome">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="400.0" prefWidth="600.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE" tabMinWidth="100.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conHome">
 <tabs>
     <Tab fx:id="registtab" text="注册">
          <content>
@@ -14,7 +13,7 @@
                   <TextField fx:id="text_name2" layoutX="351.0" layoutY="82.0" promptText="pls input your user id" />
                   <PasswordField fx:id="text_pass1" layoutX="351.0" layoutY="142.0" promptText="pls input your password" />
                   <Button layoutX="452.0" layoutY="259.0" mnemonicParsing="false" onAction="#Clear" text="重置" />
-                  <Button fx:id="logbtn1" layoutX="351.0" layoutY="259.0" mnemonicParsing="false" onAction="#Regist" text="确认" />
+                  <Button fx:id="logbtn1" layoutX="351.0" layoutY="259.0" mnemonicParsing="false" onAction="#Regist" stylesheets="@../css/loginpage.css" text="确认" />
                   <Label layoutX="397.0" layoutY="39.0" text="注册" />
                   <Label layoutX="264.0" layoutY="141.0" prefHeight="33.0" prefWidth="64.0" text="设置密码" />
                   <Label layoutX="272.0" layoutY="87.0" text="用户名" />

@@ -2,10 +2,27 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="333.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conShowAlert">
+
+<VBox prefHeight="157.0" prefWidth="257.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conShowAlert">
    <children>
-      <Button fx:id="exitButton" layoutX="66.0" layoutY="127.0" mnemonicParsing="false" onAction="#exitclick" text="Button" />
-      <Label fx:id="message" layoutX="53.0" layoutY="45.0" text="Label" />
+      <GridPane prefHeight="157.0" prefWidth="171.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="message" text="Label" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Microsoft YaHei" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitclick" prefHeight="28.0" prefWidth="71.0" text="OK" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
    </children>
-</AnchorPane>
+</VBox>

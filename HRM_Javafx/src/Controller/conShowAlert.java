@@ -1,10 +1,12 @@
 package Controller;
 
-import Stage.StageManagement;
+import utils.StageManagement;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class conShowAlert {
     @FXML
@@ -15,7 +17,7 @@ public class conShowAlert {
     private void initialize(){
         message.setText(StageManagement.message);
     }
-    public void exitclick() {
+    public void exitclick() throws IOException {
         //通过stage方式操作窗口，因为一个新的窗口就是一个新的stage
         Stage stage = (Stage)exitButton.getScene().getWindow();
         stage.close();
@@ -30,11 +32,16 @@ public class conShowAlert {
             Stage priStage= StageManagement.STAGE.get("home");
             priStage.close();
         }
-//        else if(StageManagement.message=="此用户还没有注册" ) {
-//            Stage priStage = StageManagement.STAGE.get("home");
-//            priStage.close();
-//        }
+        else if(StageManagement.message=="此用户还没有注册" ) {
 
+            conLoginPage clp=(conLoginPage) StageManagement.CONTROLLER.get("log");
+            clp.goToRegist();
+        }
+
+        else if(StageManagement.message=="已注册请直接登陆"|| StageManagement.message=="注册成功") {
+            conRegistPage crp=(conRegistPage) StageManagement.CONTROLLER.get("reg");
+            crp.goToLogin();
+        }
         //实现注册成功后，获取焦点到登陆tab
         //
     }

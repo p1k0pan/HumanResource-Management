@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="content" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conRegistPage">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <GridPane id="backgro" layoutX="275.0" prefHeight="400.0" prefWidth="325.0" stylesheets="@../css/loginpage.css" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="67.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="55.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="74.8" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="60.999999999999986" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="41.19999999999999" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="166.0" minHeight="1.5999999999999943" prefHeight="6.800000000000011" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="209.0" minHeight="10.0" prefHeight="57.599999999999994" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="40.599999999999994" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="82.19998474121093" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button id="loginbtn" fx:id="logbtn" mnemonicParsing="false" onAction="#Regist" onMouseEntered="#showShadow" onMouseExited="#shutShadow" prefHeight="32.0" prefWidth="151.0" stylesheets="@../css/loginpage.css" text="注   册" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+                  <Button fx:id="clearbtn" ellipsisString="1" mnemonicParsing="false" onAction="#Clear" onMouseEntered="#clear_showShadow" onMouseExited="#clear_shutShadow" prefHeight="23.0" prefWidth="47.0" text="重置" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label text="确认密码" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+                  <Label text="用户名" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                  <PasswordField fx:id="text_pass1" prefHeight="10.0" prefWidth="176.0" promptText="请确认密码" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+                  <TextField fx:id="text_name2" promptText="请输入ID" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                  <Label text="注   册" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label ellipsisString="" prefHeight="29.0" prefWidth="257.0" text="人事工资管理系统" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="密码" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+                  <PasswordField fx:id="text_pass2" promptText="请输入密码" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+                  <Label fx:id="userconfirm" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+                  <Button ellipsisString="1" mnemonicParsing="false" onAction="#checkexist" prefHeight="23.0" prefWidth="47.0" text="✔" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="65.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icon.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <ImageView fitHeight="400.0" fitWidth="303.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="297.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../img/1.jpg" />
+               </image>
+            </ImageView>
+            <Button id="sel_loginbtn" fx:id="sellogin" layoutX="275.0" layoutY="370.0" mnemonicParsing="false" onAction="#goToLogin" prefHeight="39.0" prefWidth="174.0" stylesheets="@../css/loginpage.css" text="登   录" textFill="#8a8a8a" AnchorPane.bottomAnchor="0.0" />
+            <Button id="sel_registbtn" fx:id="selregist" layoutX="485.0" layoutY="370.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="151.0" stylesheets="@../css/loginpage.css" text="注   册" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

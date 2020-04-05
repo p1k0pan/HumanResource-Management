@@ -16,7 +16,7 @@ public class loginConfirm {
 //        String priority=resultSet.getString("priority");
         if("".equals(name) || "".equals(password)){
 //            System.out.println("请输入账号与密码");
-            Stage.StageManagement.message="请输入账号与密码";
+            StageManagement.message="请输入账号与密码";
             Stage.alertStage.display();
         }
 
@@ -26,16 +26,16 @@ public class loginConfirm {
                 if(resultSet.next()) {
                     if(resultSet.getString("password")==null)
                     {
-                        Stage.StageManagement.message="此用户还没有注册";
+                        StageManagement.message="此用户还没有注册";
                         Stage.alertStage.display();
                     }
                     else if (resultSet.getString("id").equals(name) && resultSet.getString("password").equals(password) && resultSet.getString("priority").equals(pri)) {
 //                        System.out.println("登陆成功！");
-                        Stage.StageManagement.message="登陆成功";
+                        StageManagement.message="登陆成功";
                         Stage.alertStage.display();
                     } else {
 //                        System.out.println("登陆失败");
-                        Stage.StageManagement.message="登陆失败";
+                        StageManagement.message="登陆失败";
                         Stage.alertStage.display();
                         FadeTransition fadeTransition = new FadeTransition();
                         fadeTransition.setDelay(Duration.seconds(0.1));
@@ -46,7 +46,7 @@ public class loginConfirm {
                     }
                 }
                 else{
-                    Stage.StageManagement.message="用户名不存在";
+                    StageManagement.message="用户名不存在";
                     Stage.alertStage.display();
                 }
 

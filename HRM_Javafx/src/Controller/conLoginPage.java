@@ -1,19 +1,28 @@
 package Controller;
 
+import Stage.Main;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import utils.StageManagement;
 
 import java.io.IOException;
 import java.sql.SQLException;
 
 public class conLoginPage {
 
-    public ToggleGroup group= new ToggleGroup();
-    public String name="";
-    public String pass="";
-    public String pri="人事部";
+    public ToggleGroup groupLog= new ToggleGroup();
+    public String nameLog="";
+    public String passLog="";
+    public String priLog="人事部";
     @FXML
     private TextField text_name;
     @FXML
@@ -24,77 +33,88 @@ public class conLoginPage {
     private RadioButton guanli;
 
     @FXML
-    private void initialize(){
+    private Button logbtn;
+    @FXML
+    private Button clearbtn;
+    @FXML
+    private Button sellogin;
+    @FXML
+    private Button selregist;
+    @FXML
+    private void initialize() {
+        ToggleGroup group = new ToggleGroup();
         renshi.setToggleGroup(group);
         guanli.setToggleGroup(group);
         renshi.setSelected(true);
-        group.selectedToggleProperty().addListener(
-                new ChangeListener<Toggle>() {
-                    public void changed(
-                            ObservableValue<? extends Toggle> ov,
-                            Toggle old_toggle, Toggle new_toggle) {
-                        if (group.getSelectedToggle() != null) {
-                            if (renshi.isSelected())
-                            {
-                                pri="人事部";
-                            }
-                            else
-                            {
-                                pri="管理部";
-                            }
-                        }
-                    }
-                });
-
-//       text_name.focusedProperty().addListener(new ChangeListener<Boolean>(){
-//            public void changed(ObservableValue<? extends Boolean> boolVal,
-//                                Boolean oldVal, Boolean newVal) {
-//                if (newVal == true)
-//                {
-//                    ResultSet rs = null;
-//                    try {
-//                        rs = dao.MySqlCommand.OptionDate(name);
-//                        if(!rs.next()){
-//                            userconfirm.setText("id不存在");
-//                        }
-//                    } catch (SQLException e) {
-//                        e.printStackTrace();
-//                    }
-//
-//                }
-//
-//            }
-//        } );
-
-
-//        userconfirm.textProperty().addListener(new ChangeListener<String>() {
-//            @Override
-//            public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
-//                tip1.setText("\""+t1+"\"");
-//                if(t1.length()>6){
-//                    t_name.setText(s);
-//                }
-//            }
-//        });
+        try {
+            groupLog.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
+                @Override
+                public void changed(ObservableValue<? extends Toggle> changed, Toggle oldVal, Toggle newVal) {
+                    RadioButton temp_rb = (RadioButton) newVal;
+                    priLog = temp_rb.getText();
+                }
+            });
+        } catch (NullPointerException e) {
+            System.out.println(e);
+        }
     }
     public void Log() throws SQLException, IOException {
-       pass =text_pass.getText();
-       name=text_name.getText();
+        passLog = text_pass.getText();
+        nameLog = text_name.getText();
+        StageManagement.CONTROLLER.put("log",this);
+        utils.loginConfirm.confirm(nameLog, passLog, priLog);
 
-       utils.loginConfirm.confirm(name,pass,pri);
-//           System.out.println(rs.getString("id"));
-//           System.out.println(rs.getString("password"));
-//           System.out.println(rs.getString("priority"));
-                        }
-//        List<String> result=dao.connectAccount.getAccount(name);
-//        Iterator<String> it= result.iterator();
-//        while(it.hasNext()){
-//            System.out.println(it.next());
-//        }
+    }
 
+    public void Clear(){
+        text_name.clear();
+        text_pass.clear();
+        text_name.requestFocus();
+    }
 
 
+    public void clear_showShadow(MouseEvent mouseEvent) {
+        DropShadow shadow = new DropShadow();
+        shadow.setRadius(2.0);
+        clearbtn.setEffect(shadow);
 
+    }
+
+    public void clear_shutShadow(MouseEvent mouseEvent) {
+        clearbtn.setEffect(null);
+    }
+
+    public void showShadow(MouseEvent mouseEvent) {
+        DropShadow shadow = new DropShadow();
+        shadow.setRadius(2.0);
+        logbtn.setEffect(shadow);
+    }
+
+    public void shutShadow(MouseEvent mouseEvent) {
+        logbtn.setEffect(null);
+    }
+
+    public void goToRegist(ActionEvent actionEvent) throws IOException {
+        VBox root=new VBox();
+        root.setId("root");
+        root.getStylesheets().add(Main.class.getResource("/css/closing.css").toString());
+        VBox top = FXMLLoader.load(getClass().getResource("/View/headModel.fxml"));
+        VBox down= FXMLLoader.load(getClass().getResource("/View/registpage.fxml"));
+        root.getChildren().addAll(top,down);
+        Stage stage= StageManagement.STAGE.get("home");
+        stage.setScene(new Scene(root));
+    }
+
+    public void goToRegist() throws IOException {
+        VBox root=new VBox();
+        root.setId("root");
+        root.getStylesheets().add(Main.class.getResource("/css/closing.css").toString());
+        VBox top = FXMLLoader.load(getClass().getResource("/View/headModel.fxml"));
+        VBox down= FXMLLoader.load(getClass().getResource("/View/registpage.fxml"));
+        root.getChildren().addAll(top,down);
+        Stage stage= StageManagement.STAGE.get("home");
+        stage.setScene(new Scene(root));
+    }
 }
 
 

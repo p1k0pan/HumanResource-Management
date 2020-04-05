@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="top" prefHeight="20.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conCloseIcon">
+   <children>
+      <AnchorPane id="top" prefHeight="0.0" prefWidth="600.0">
+         <children>
+            <Label text="人事工资管理系统" textFill="#c2c2c2" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="3.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView id="winClose" fx:id="closeIcon" fitHeight="15.0" fitWidth="15.0" layoutX="392.0" layoutY="-1.0" onMouseClicked="#windowClose" onMouseEntered="#changeRed" onMouseExited="#changeGray" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="3.0">
+               <image>
+                  <Image url="@../img/closegray.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/10ac6bcc6cc6e4a59cc3313f810288e.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
