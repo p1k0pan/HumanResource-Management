@@ -45,9 +45,9 @@
                         <Font size="25.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="70.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="72.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../img/icon.jpg" />
+                        <Image url="@../img/icon2.png" />
                      </image>
                   </ImageView>
                </children>

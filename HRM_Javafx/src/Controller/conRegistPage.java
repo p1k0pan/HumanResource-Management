@@ -10,6 +10,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.effect.DropShadow;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Paint;
@@ -38,6 +40,15 @@ public class conRegistPage {
     @FXML
     private Button clearbtn;
 
+    @FXML
+    private void initialize() {
+        Image btnImg = new Image("/img/reg.png");
+        ImageView imageView = new ImageView(btnImg);
+        imageView.setFitHeight(20);
+        imageView.setFitWidth(20);
+        //给按钮设置图标
+        logbtn.setGraphic(imageView);
+    }
     public void Clear(){
         text_name2.clear();
         text_pass2.clear();

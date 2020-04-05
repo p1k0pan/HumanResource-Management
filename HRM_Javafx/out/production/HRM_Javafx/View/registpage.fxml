@@ -56,9 +56,9 @@
                         <Font size="12.0" />
                      </font>
                   </Button>
-                  <ImageView fitHeight="65.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="80.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../img/icon.jpg" />
+                        <Image url="@../img/icon2.png" />
                      </image>
                   </ImageView>
                </children>

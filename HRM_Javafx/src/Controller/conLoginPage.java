@@ -9,6 +9,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.effect.DropShadow;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -57,6 +59,12 @@ public class conLoginPage {
         } catch (NullPointerException e) {
             System.out.println(e);
         }
+        Image btnImg = new Image("/img/log.png");
+        ImageView imageView = new ImageView(btnImg);
+        imageView.setFitHeight(20);
+        imageView.setFitWidth(20);
+        //给按钮设置图标
+        logbtn.setGraphic(imageView);
     }
     public void Log() throws SQLException, IOException {
         passLog = text_pass.getText();

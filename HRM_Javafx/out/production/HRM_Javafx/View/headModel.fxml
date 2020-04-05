@@ -19,9 +19,9 @@
                   <Image url="@../img/closegray.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="33.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="22.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/10ac6bcc6cc6e4a59cc3313f810288e.png" />
+                  <Image url="@../img/icon2.png" />
                </image>
             </ImageView>
          </children>
