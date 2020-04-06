@@ -22,8 +22,8 @@ public class conShowAlert {
         Stage stage = (Stage)exitButton.getScene().getWindow();
         stage.close();
         if(StageManagement.message=="登陆失败"|| StageManagement.message=="用户名不存在"){
-            conHome ch=(conHome)StageManagement.CONTROLLER.get("home");
-            ch.Clear();
+            conLoginPage clp=(conLoginPage) StageManagement.CONTROLLER.get("log");
+            clp.Clear();
 //            ch.text_name.setText("");
 //            ch.text_pass.setText("");
 

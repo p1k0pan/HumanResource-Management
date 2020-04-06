@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="72.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+         <Button layoutX="461.0" layoutY="19.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="103.0" text="退出系统" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="19.0" />
+         <Label layoutX="104.0" layoutY="15.0" prefHeight="18.0" prefWidth="278.0" text="人事工资管理系统" AnchorPane.leftAnchor="104.0" AnchorPane.topAnchor="15.0">
+             <font>
+                 <Font name="Microsoft YaHei Bold" size="30.0" />
+             </font>
+         </Label>
+         <Separator layoutX="921.0" layoutY="3.0" orientation="VERTICAL" prefHeight="66.0" prefWidth="9.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="3.0" />
+         <ImageView fitHeight="62.0" fitWidth="57.0" layoutX="27.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="2.0">
+             <image>
+                 <Image url="@../img/icon2.png" />
+             </image>
+         </ImageView>
+         <GridPane layoutX="256.0" layoutY="7.0" prefHeight="57.0" prefWidth="122.0" AnchorPane.rightAnchor="222.0" AnchorPane.topAnchor="7.0">
+             <columnConstraints>
+                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+             </columnConstraints>
+             <rowConstraints>
+                 <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="112.0" vgrow="SOMETIMES" />
+                 <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="108.0" vgrow="SOMETIMES" />
+                 <RowConstraints maxHeight="29.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+             </rowConstraints>
+             <children>
+                 <Label text="用户：" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM" />
+                 <Label text="ID：" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                 <Label text="Label" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+                 <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+             </children>
+         </GridPane>
+   </children>
+</AnchorPane>
