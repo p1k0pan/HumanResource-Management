@@ -17,7 +17,7 @@ public class conLoad {
     public BorderPane center =new BorderPane();
     @FXML
     private void initialize() throws IOException {
-        AnchorPane header= FXMLLoader.load(getClass().getResource("/View/header.fxml"));
+        AnchorPane header= FXMLLoader.load(getClass().getResource("/View/mainHeader.fxml"));
         GridPane c_left=FXMLLoader.load(getClass().getResource("/View/side.fxml"));
 //        VBox c_right=FXMLLoader.load(getClass().getResource("/View/manManage.fxml"));
         center.setLeft(c_left);

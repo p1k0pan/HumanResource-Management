@@ -35,3 +35,12 @@
 
 工资（<u>员工号</u>id，职务工资basic，补助subsidy，政府津贴gov_allowance，职务津贴pos_allowance）
 
+#### TODo
+
+1. 单击图片或者label打开窗口，窗口显示员工个人信息
+   1. 新窗口标题用headModel，窗口不可拖动
+   2. 点击修改按钮，label变成textfield
+   3. 确定提示是否修改
+   4. 点击返回
+2. 查找姓名或者id
+3. 筛选职位
