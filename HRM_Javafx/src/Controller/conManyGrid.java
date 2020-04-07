@@ -20,9 +20,9 @@ public class conManyGrid {
     @FXML
     private void initialize() throws IOException, SQLException {
 
-        System.out.println(mainGrid.getPrefHeight());
-        System.out.println(mainGrid.getPrefWidth());
-        ResultSet rs= selectSQLCommand.OptionDate("SELECT id,name FROM staff ");
+//        System.out.println(mainGrid.getPrefHeight());
+//        System.out.println(mainGrid.getPrefWidth());
+        ResultSet rs= selectSQLCommand.OptionDate(StageManagement.sqlquery);
         int total=0;
         int num=0;
         List<String> totalname=new ArrayList();
@@ -43,14 +43,17 @@ public class conManyGrid {
                 VBox name = FXMLLoader.load(getClass().getResource("/View/oneSingle.fxml"));
 //                name.setPrefWidth(160);
 //                name.setPrefHeight(150);
-                conOnSingle cos=(conOnSingle) StageManagement.CONTROLLER.get("onesingle");
+                conOneSingle cos=(conOneSingle) StageManagement.CONTROLLER.get("onesingle");
                 cos.name.setText(totalname.get(num));
                 cos.id.setText(totalid.get(num));
+
+//                StageManagement.SINGLE.put(totalid.get(num),cos);
+
                 mainGrid.add(name, col, row);
                 mainGrid.setPadding(new Insets(5,0,0,0));
                 num++;
-                System.out.println(name.getPrefHeight());
-                System.out.println(name.getPrefWidth());
+//                System.out.println(name.getPrefHeight());
+//                System.out.println(name.getPrefWidth());
             }
             row+=1;
         }

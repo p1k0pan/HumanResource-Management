@@ -5,7 +5,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import utils.StageManagement;
 
 
 public class conCloseIcon {
@@ -23,7 +22,7 @@ public class conCloseIcon {
     }
 
     public void windowClose(MouseEvent mouseEvent) {
-        Stage stage=StageManagement.STAGE.get("home");
+        Stage stage = (Stage)closeIcon.getScene().getWindow();
         stage.close();
 
     }

@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="72.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+<AnchorPane prefHeight="72.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
    <children>
          <Button layoutX="461.0" layoutY="19.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="103.0" text="退出系统" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="19.0" />
          <Label layoutX="104.0" layoutY="15.0" prefHeight="18.0" prefWidth="278.0" text="人事工资管理系统" AnchorPane.leftAnchor="104.0" AnchorPane.topAnchor="15.0">
@@ -29,15 +25,19 @@
                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
              </columnConstraints>
              <rowConstraints>
-                 <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="112.0" vgrow="SOMETIMES" />
-                 <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="108.0" vgrow="SOMETIMES" />
+                 <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="14.600000000000001" vgrow="SOMETIMES" />
+                 <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="42.6" vgrow="SOMETIMES" />
                  <RowConstraints maxHeight="29.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
              </rowConstraints>
              <children>
-                 <Label text="用户：" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM" />
-                 <Label text="ID：" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                 <Label text="Label" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
-                 <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                 <Label text="ID：" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+                 <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
              </children>
          </GridPane>
    </children>

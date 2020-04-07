@@ -1,5 +1,6 @@
 package utils;
 
+import Stage.AlertStage;
 import dao.selectSQLCommand;
 
 import java.io.IOException;
@@ -12,13 +13,13 @@ public class registConfirm {
         if("".equals(name) || "".equals(pass1) || "".equals(pass2)){
 //            System.out.println("请输入账号与密码");
             StageManagement.message="请输入账号与密码";
-            Stage.alertStage.display();
+            AlertStage.onedisplay();
         }
         else {
             //不为空情况下判断两次密码是否一致
             if (!pass1.equals(pass2)) {
                 StageManagement.message = "两次密码输入不一致";
-                Stage.alertStage.display();
+                AlertStage.onedisplay();
             }
             else {
                     ResultSet rs = selectSQLCommand.OptionDate("select * from account where id=" + name);
@@ -30,23 +31,23 @@ public class registConfirm {
                             int len=dao.updateSQLCommand.OptionDate(sql);
                             if(len >0) {
                                 StageManagement.message = "注册成功";
-                                Stage.alertStage.display();
+                                AlertStage.onedisplay();
                             }
                             else {
                                 StageManagement.message = "失败";
-                                Stage.alertStage.display();
+                                AlertStage.onedisplay();
                             }
 
                         }
                         else {
                             //id已注册过
                             StageManagement.message = "已注册请直接登陆";
-                            Stage.alertStage.display();
+                            AlertStage.onedisplay();
                         }
                     }
                     else {
                         StageManagement.message = "id不存在";
-                        Stage.alertStage.display();
+                        AlertStage.onedisplay();
                     }
                 }
         }

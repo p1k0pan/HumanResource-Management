@@ -1,5 +1,6 @@
 package utils;
 
+import Stage.AlertStage;
 import dao.selectSQLCommand;
 import javafx.animation.FadeTransition;
 import javafx.util.Duration;
@@ -17,7 +18,7 @@ public class loginConfirm {
         if("".equals(name) || "".equals(password)){
 //            System.out.println("请输入账号与密码");
             StageManagement.message="请输入账号与密码";
-            Stage.alertStage.display();
+            AlertStage.onedisplay();
         }
 
 
@@ -27,16 +28,16 @@ public class loginConfirm {
                     if(resultSet.getString("password")==null)
                     {
                         StageManagement.message="此用户还没有注册";
-                        Stage.alertStage.display();
+                        AlertStage.onedisplay();
                     }
                     else if (resultSet.getString("id").equals(name) && resultSet.getString("password").equals(password) && resultSet.getString("priority").equals(pri)) {
 //                        System.out.println("登陆成功！");
                         StageManagement.message="登陆成功";
-                        Stage.alertStage.display();
+                        AlertStage.onedisplay();
                     } else {
 //                        System.out.println("登陆失败");
                         StageManagement.message="登陆失败";
-                        Stage.alertStage.display();
+                        AlertStage.onedisplay();
                         FadeTransition fadeTransition = new FadeTransition();
                         fadeTransition.setDelay(Duration.seconds(0.1));
                         //                    fadeTransition.setNode(gr);
@@ -47,7 +48,7 @@ public class loginConfirm {
                 }
                 else{
                     StageManagement.message="用户名不存在";
-                    Stage.alertStage.display();
+                    AlertStage.onedisplay();
                 }
 
 

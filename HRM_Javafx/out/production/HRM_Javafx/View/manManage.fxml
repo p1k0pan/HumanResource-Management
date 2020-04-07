@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conManM">
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conManManage">
    <children>
       <GridPane prefHeight="148.0" prefWidth="1152.0">
         <columnConstraints>
@@ -20,19 +20,25 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="查 找" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <Label text="姓名/ID查找" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label text="筛 选" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Label text="职位筛选" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <ComboBox prefHeight="30.0" prefWidth="376.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cbb" prefHeight="30.0" prefWidth="376.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="textsearch" promptText="输入名字或数字，同时输入无效" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <Button mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="93.0" text="搜 索" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Microsoft YaHei" size="17.0" />
+               </font></Button>
             <Label prefHeight="40.0" prefWidth="123.0" text="人员管理" GridPane.columnIndex="2" GridPane.halignment="CENTER">
                <font>
                   <Font name="Microsoft YaHei" size="23.0" />
@@ -40,7 +46,7 @@
             </Label>
          </children>
       </GridPane>
-      <ScrollPane prefHeight="485.0" prefWidth="1152.0" fx:id="sp">
+      <ScrollPane fx:id="sp" prefHeight="485.0" prefWidth="1152.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
         </content>

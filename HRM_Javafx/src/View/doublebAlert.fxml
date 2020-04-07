@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="157.0" prefWidth="257.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conynAlert">
+   <children>
+      <GridPane prefHeight="157.0" prefWidth="171.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.0" minWidth="10.0" prefWidth="43.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.0" minWidth="10.0" prefWidth="183.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="78.0" minWidth="10.0" prefWidth="38.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="message" text="数据是否确认修改？" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Microsoft YaHei" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="yes" mnemonicParsing="false" onAction="#confirm" prefHeight="29.0" prefWidth="67.0" text="确 认" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+            <Button fx:id="no" mnemonicParsing="false" onAction="#cancell" prefHeight="28.0" prefWidth="64.0" text="取 消" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>
