@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conManManage">
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conManManage">
    <children>
       <GridPane prefHeight="148.0" prefWidth="1152.0">
         <columnConstraints>
@@ -44,9 +45,14 @@
                   <Font name="Microsoft YaHei" size="23.0" />
                </font>
             </Label>
+            <Button mnemonicParsing="false" onAction="#refresh" prefHeight="30.0" prefWidth="93.0" text="重 置" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Microsoft YaHei" size="17.0" />
+               </font>
+            </Button>
          </children>
       </GridPane>
-      <ScrollPane fx:id="sp" prefHeight="485.0" prefWidth="1152.0">
+      <ScrollPane fx:id="sp" prefHeight="501.0" prefWidth="1152.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
         </content>

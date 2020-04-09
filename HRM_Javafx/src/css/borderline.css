@@ -2,3 +2,10 @@
 /*    -fx-border-color: red;*/
 /*    -fx-border-width: 5px;*/
 /*}*/
+#an{
+    -fx-border-width: 0,20,0,0;
+    -fx-border-color: #78e2ff;
+}
+.list-cell{
+    -fx-font-size: 15px;
+}

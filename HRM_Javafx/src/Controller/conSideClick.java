@@ -13,4 +13,10 @@ public class conSideClick {
         VBox c_right= FXMLLoader.load(getClass().getResource("/View/manManage.fxml"));
         cl.center.setCenter(c_right);
     }
+
+    public void showSalary(MouseEvent mouseEvent) throws IOException {
+        conLoad cl=(conLoad) StageManagement.CONTROLLER.get("centerboard");
+        VBox c_right= FXMLLoader.load(getClass().getResource("/View/mainSalary.fxml"));
+        cl.center.setCenter(c_right);
+    }
 }

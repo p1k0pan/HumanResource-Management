@@ -21,7 +21,7 @@
                  <Font size="24.0" />
              </font>
       </Label>
-         <Label text="工资管理" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <Label onMouseClicked="#showSalary" text="工资管理" GridPane.halignment="CENTER" GridPane.rowIndex="2">
              <font>
                  <Font size="24.0" />
              </font>

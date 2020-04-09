@@ -125,10 +125,17 @@ public class conManManage {
                 showGridpane();
             }
             else if(!is[0] && is[1]){
-                StageManagement.sqlquery = "SELECT id,name FROM staff where id like \"%" + key + "%\""+" and position=\""+choosen+"\"";
+                StageManagement.sqlquery="SELECT id,name FROM staff where id like \"%"+key+"%\"";
                 showGridpane();
             }
 
         }
+    }
+
+    public void refresh(ActionEvent actionEvent) throws IOException {
+        StageManagement.sqlquery="SELECT id,name FROM staff ";
+        showGridpane();
+        textsearch.setText("");
+        cbb.getSelectionModel().clearSelection();
     }
 }
