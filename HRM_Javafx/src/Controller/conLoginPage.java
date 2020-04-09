@@ -1,6 +1,6 @@
 package Controller;
 
-import Stage.Main;
+import store.Main;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;

@@ -1,6 +1,6 @@
 package utils;
 
-import Stage.AlertStage;
+import store.AlertStage;
 import dao.selectSQLCommand;
 
 import java.io.IOException;

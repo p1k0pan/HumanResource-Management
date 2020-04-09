@@ -5,11 +5,16 @@
 
 <AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <TableView fx:id="table" layoutX="116.0" layoutY="88.0" prefHeight="200.0" prefWidth="200.0">
-        <columns>
-          <TableColumn fx:id="c1" prefWidth="75.0" text="C1" />
-          <TableColumn fx:id="c2" prefWidth="75.0" text="C2" />
-        </columns>
-      </TableView>
+      <VBox fx:id="vbox" layoutX="116.0" layoutY="88.0">
+         <children>
+            <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="c1" prefWidth="75.0" text="C1" />
+                <TableColumn fx:id="c2" prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Button mnemonicParsing="false" onAction="#export" text="Button" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

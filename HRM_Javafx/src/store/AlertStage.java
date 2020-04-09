@@ -1,4 +1,4 @@
-package Stage;
+package store;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

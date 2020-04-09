@@ -1,6 +1,6 @@
 package Controller;
 
-import Stage.Main;
+import store.Main;
 import dao.selectSQLCommand;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

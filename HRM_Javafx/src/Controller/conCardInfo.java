@@ -1,6 +1,6 @@
 package Controller;
 
-import Stage.AlertStage;
+import store.AlertStage;
 import com.mysql.cj.jdbc.exceptions.MysqlDataTruncation;
 import dao.updateSQLCommand;
 import javafx.event.ActionEvent;

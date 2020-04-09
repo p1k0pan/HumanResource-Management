@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="607.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conSalaryFormat">
+<AnchorPane prefHeight="607.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conSalaryFormat">
    <children>
-      <TableView fx:id="tableView" layoutY="165.0" prefHeight="274.0" prefWidth="821.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-        <columns>
-          <TableColumn fx:id="id_col" prefWidth="90.0" text="ID" />
-          <TableColumn fx:id="name_col" prefWidth="95.0" text="姓名" />
-            <TableColumn fx:id="basic_col" prefWidth="124.0" text="基础&#10;工资" />
-            <TableColumn fx:id="pos_col" prefWidth="107.0" text="职务&#10;补助" />
-            <TableColumn fx:id="other_col" prefWidth="117.0" text="其他&#10;补助" />
-            <TableColumn fx:id="gov_col" prefWidth="108.0" text="政府&#10;补贴" />
-            <TableColumn fx:id="self_col" minWidth="0.0" prefWidth="99.0" text="个人&#10;所得税" />
-            <TableColumn fx:id="total_col" text="总收入" />
-        </columns>
-      </TableView>
-      <Label fx:id="name" layoutX="360.0" layoutY="125.0" text="Label">
+      <VBox fx:id="vbox" layoutY="125.0">
+         <children>
+            <Label fx:id="name" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableView" prefHeight="274.0" prefWidth="821.0">
+              <columns>
+                <TableColumn fx:id="id_col" prefWidth="90.0" text="ID" />
+                <TableColumn fx:id="name_col" prefWidth="95.0" text="姓名" />
+                  <TableColumn fx:id="basic_col" prefWidth="124.0" text="基础&#10;工资" />
+                  <TableColumn fx:id="pos_col" prefWidth="107.0" text="职务&#10;补助" />
+                  <TableColumn fx:id="other_col" prefWidth="117.0" text="其他&#10;补助" />
+                  <TableColumn fx:id="gov_col" prefWidth="108.0" text="政府&#10;补贴" />
+                  <TableColumn fx:id="self_col" minWidth="0.0" prefWidth="99.0" text="个人&#10;所得税" />
+                  <TableColumn fx:id="total_col" text="总收入" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Button fx:id="print" layoutX="445.0" layoutY="475.0" mnemonicParsing="false" onAction="#Print" prefHeight="15.0" prefWidth="89.0" text=" 打 印">
          <font>
-            <Font size="20.0" />
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="274.0" layoutY="475.0" mnemonicParsing="false" onAction="#export" prefHeight="30.0" prefWidth="90.0" text="导 出">
+         <font>
+            <Font size="15.0" />
          </font>
-      </Label>
+      </Button>
    </children>
 </AnchorPane>

@@ -1,6 +1,6 @@
 package utils;
 
-import Stage.AlertStage;
+import store.AlertStage;
 import dao.selectSQLCommand;
 import javafx.animation.FadeTransition;
 import javafx.util.Duration;

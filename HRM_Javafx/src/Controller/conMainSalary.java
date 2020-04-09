@@ -1,6 +1,6 @@
 package Controller;
 
-import Stage.AlertStage;
+import store.AlertStage;
 import dao.selectSQLCommand;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;

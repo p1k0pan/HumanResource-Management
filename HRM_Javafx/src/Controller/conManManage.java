@@ -1,6 +1,6 @@
 package Controller;
 
-import Stage.AlertStage;
+import store.AlertStage;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -20,6 +20,7 @@ public class conManManage {
 //    private AnchorPane ap;
 //    @FXML
 //    private ScrollPane sp;
+
     @FXML
     private ScrollPane sp;
     @FXML
