@@ -70,10 +70,10 @@ public class conSalaryFormat {
         vbox.setAlignment(Pos.CENTER);
         ResultSet resultSet = selectSQLCommand.OptionDate(StageManagement.sqlquery);
         while (resultSet.next()) {
-            double basic = resultSet.getInt("basic");
-            double pos = resultSet.getInt("pos_allowance");
-            double subsidy = resultSet.getInt("subsidy");
-            double gov = resultSet.getInt("gov_allowance");
+            double basic = resultSet.getDouble("basic");
+            double pos = resultSet.getDouble("pos_allowance");
+            double subsidy = resultSet.getDouble("subsidy");
+            double gov = resultSet.getDouble("gov_allowance");
             double fourplus = basic + pos + subsidy + gov;
             double self = fourplus * 0.25;
             double total = fourplus * 0.75;

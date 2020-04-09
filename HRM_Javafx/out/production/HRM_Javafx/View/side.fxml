@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -20,16 +21,25 @@
              <font>
                  <Font size="24.0" />
              </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
          <Label onMouseClicked="#showSalary" text="工资管理" GridPane.halignment="CENTER" GridPane.rowIndex="2">
              <font>
                  <Font size="24.0" />
              </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
-         <Label text="工资统计" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <Label onMouseClicked="#showStatistic" text="工资统计" GridPane.halignment="CENTER" GridPane.rowIndex="3">
              <font>
                  <Font size="24.0" />
              </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
      </children>
  </GridPane>

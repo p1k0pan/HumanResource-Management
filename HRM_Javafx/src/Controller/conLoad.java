@@ -21,6 +21,8 @@ public class conLoad {
         GridPane c_left=FXMLLoader.load(getClass().getResource("/View/side.fxml"));
 //        VBox c_right=FXMLLoader.load(getClass().getResource("/View/manManage.fxml"));
         center.setLeft(c_left);
+        AnchorPane c_right=FXMLLoader.load(getClass().getResource("/View/home.fxml"));
+        center.setCenter(c_right);
 //        center.setCenter(c_right);
         root.getChildren().addAll(header,center);
         StageManagement.CONTROLLER.put("centerboard",this);
