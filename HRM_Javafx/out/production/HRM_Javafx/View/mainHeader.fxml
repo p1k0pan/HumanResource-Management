@@ -2,6 +2,7 @@
 
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
@@ -15,7 +16,14 @@
          </cursor>
          <font>
             <Font size="14.0" />
-         </font></Button>
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.4957483112812042" />
+               </color>
+            </DropShadow>
+         </effect></Button>
          <ImageView fitHeight="62.0" fitWidth="57.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="14.0">
              <image>
                  <Image url="@../img/icon2.png" />
@@ -69,9 +77,9 @@
                         <Color red="0.41547271609306335" green="0.5937504172325134" blue="0.7605262994766235" />
                      </color>
                   </Stop>
-                  <Stop offset="0.3667066399414849">
+                  <Stop offset="0.16608198225028661">
                      <color>
-                        <Color red="0.4180000126361847" green="0.5946999788284302" blue="0.7599999904632568" />
+                        <Color red="0.3108333349227905" green="0.6573852300643921" blue="0.9815789461135864" />
                      </color>
                   </Stop>
                   <Stop offset="0.9999999542465096">
@@ -92,6 +100,13 @@
                </stops>
             </LinearGradient>
          </fill>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.43877550959587097" />
+               </color>
+            </DropShadow>
+         </effect>
       </Text>
    </children>
 </AnchorPane>

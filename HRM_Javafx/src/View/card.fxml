@@ -2,7 +2,9 @@
 
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
 <VBox id="vbox" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conCardInfo">
@@ -26,6 +28,13 @@
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.4957483410835266" />
+                           </color>
+                        </DropShadow>
+                     </effect>
                   </Button>
                </children>
             </GridPane>
@@ -36,7 +45,7 @@
                         <Font name="Microsoft YaHei" size="25.0" />
                      </font>
                   </Label>
-                  <GridPane fx:id="detail" maxHeight="400.0" maxWidth="400.0" minHeight="349.0" minWidth="359.0" prefHeight="349.0" prefWidth="359.0">
+                  <GridPane fx:id="detail" maxHeight="400.0" maxWidth="400.0" minHeight="349.0" minWidth="359.0" prefHeight="349.0" prefWidth="359.0" stylesheets="@../css/textfield.css">
                     <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="64.0" />
                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="115.0" />
@@ -115,11 +124,25 @@
                         <Button mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="84.0" stylesheets="@../css/button.css" text="返 回" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
                            <cursor>
                               <Cursor fx:constant="HAND" />
-                           </cursor></Button>
+                           </cursor>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.4957483410835266" />
+                                 </color>
+                              </DropShadow>
+                           </effect></Button>
                         <Button fx:id="confirm" disable="true" mnemonicParsing="false" onAction="#modifyConfirm" prefHeight="34.0" prefWidth="87.0" stylesheets="@../css/button.css" text="确认修改" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8">
                            <cursor>
                               <Cursor fx:constant="HAND" />
-                           </cursor></Button>
+                           </cursor>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.4957483410835266" />
+                                 </color>
+                              </DropShadow>
+                           </effect></Button>
                         <Label fx:id="age" GridPane.columnIndex="2" GridPane.rowIndex="1">
                            <font>
                               <Font name="Microsoft YaHei" size="18.0" />

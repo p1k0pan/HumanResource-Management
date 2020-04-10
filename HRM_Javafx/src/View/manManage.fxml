@@ -2,7 +2,9 @@
 
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
 <VBox id="vbox" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1152.0" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conManManage">
@@ -35,7 +37,7 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></ComboBox>
-            <TextField fx:id="textsearch" promptText="输入名字或数字，同时输入无效" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <TextField fx:id="textsearch" promptText="输入名字或数字，同时输入无效" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font size="15.0" />
                </font>
@@ -48,7 +50,14 @@
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
-               </cursor></Button>
+               </cursor>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.5025510191917419" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
             <Label prefHeight="40.0" prefWidth="123.0" text="人员管理" GridPane.columnIndex="2" GridPane.halignment="CENTER">
                <font>
                   <Font name="Microsoft YaHei" size="23.0" />
@@ -61,6 +70,13 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.5025510191917419" />
+                     </color>
+                  </DropShadow>
+               </effect>
             </Button>
             <Button fx:id="addbtn" mnemonicParsing="false" onAction="#add" prefHeight="36.0" prefWidth="90.0" stylesheets="@../css/button.css" text="添 加" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
                <font>
@@ -69,12 +85,22 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.5025510191917419" />
+                     </color>
+                  </DropShadow>
+               </effect>
             </Button>
          </children>
       </GridPane>
       <ScrollPane fx:id="sp" prefHeight="501.0" prefWidth="1152.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="1149.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="1149.0">
+               <effect>
+                  <DropShadow />
+               </effect></AnchorPane>
         </content>
       </ScrollPane>
    </children>

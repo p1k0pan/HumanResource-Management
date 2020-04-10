@@ -2,7 +2,9 @@
 
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
 <VBox id="vbox" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conMainSalary">
@@ -57,7 +59,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ComboBox>
-                  <TextField fx:id="textsearch" promptText="输入名字或数字，同时输入无效" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <TextField fx:id="textsearch" promptText="输入名字或数字，同时输入无效" stylesheets="@../css/textfield.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -72,6 +74,13 @@
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.5025510191917419" />
+                           </color>
+                        </DropShadow>
+                     </effect>
                   </Button>
                   <Label prefHeight="42.0" prefWidth="56.0" text="检 索" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                      <font>
@@ -93,6 +102,13 @@
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.5025510191917419" />
+                           </color>
+                        </DropShadow>
+                     </effect>
                   </Button>
                   <Button mnemonicParsing="false" onAction="#refresh" prefHeight="30.0" prefWidth="93.0" stylesheets="@../css/button.css" text="重 置" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
                      <cursor>
@@ -101,6 +117,13 @@
                      <font>
                         <Font name="Microsoft YaHei" size="17.0" />
                      </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.5025510191917419" />
+                           </color>
+                        </DropShadow>
+                     </effect>
                   </Button>
                </children>
             </GridPane>

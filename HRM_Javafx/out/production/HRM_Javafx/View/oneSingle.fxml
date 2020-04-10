@@ -2,6 +2,7 @@
 
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -46,4 +47,7 @@
          </children>
       </GridPane>
    </children>
+   <effect>
+      <DropShadow />
+   </effect>
 </VBox>

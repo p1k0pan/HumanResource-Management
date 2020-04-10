@@ -2,30 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../HRM_Javafx/src/Controller/conLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/Controller/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/Controller/conSideClick.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/Controller/conSideClick.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/LoginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/dao/connectAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/dao/connectAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/Controller/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/Stage/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/LoginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/dao/connectAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/dao/connectAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/add.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/add.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/card.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/card.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/mainHeader.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/mainHeader.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/mainSalary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/mainSalary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/manManage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/manManage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/noclickSingle.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/noclickSingle.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/oneSingle.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/oneSingle.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/registpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/registpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/salaryFormat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/salaryFormat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/side.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/out/production/HRM_Javafx/View/side.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/Controller/conSideClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/Controller/conSideClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/add.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/add.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/card.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/card.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/loginpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/mainHeader.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/mainHeader.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/mainSalary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/mainSalary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/manManage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/manManage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/noclickSingle.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/noclickSingle.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/oneSingle.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/oneSingle.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/registpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/registpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/salaryFormat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/salaryFormat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRM_Javafx/src/View/side.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../HRM_Javafx/src/View/side.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/META-INF/javafxProject.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/mysqlJDBC/ConnectionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/ConnectionMysql.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/MySqlCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafxProject/sample/WorkerSarlary.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,6 +291,7 @@
       <workItem from="1585832420504" duration="4052000" />
       <workItem from="1585879553795" duration="8270000" />
       <workItem from="1585909126718" duration="38000" />
+      <workItem from="1586519730684" duration="607000" />
     </task>
     <servers />
   </component>

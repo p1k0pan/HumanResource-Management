@@ -2,6 +2,7 @@
 
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
@@ -9,13 +10,20 @@
 
 <AnchorPane id="anchorpane" prefHeight="180.0" prefWidth="1280.0" stylesheets="@../css/mainhead.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.exitMaincon">
    <children>
-         <Button fx:id="exit" layoutX="1062.0" layoutY="27.0" mnemonicParsing="false" onAction="#exit" prefHeight="32.0" prefWidth="103.0" stylesheets="@../css/button.css" text="退出系统" textFill="WHITE" AnchorPane.rightAnchor="114.79999999999995" AnchorPane.topAnchor="27.0">
+         <Button fx:id="exit" layoutX="1104.0" layoutY="27.0" mnemonicParsing="false" onAction="#exit" prefHeight="32.0" prefWidth="103.0" stylesheets="@../css/button.css" text="退出系统" textFill="WHITE" AnchorPane.rightAnchor="72.79999999999995" AnchorPane.topAnchor="27.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
          <font>
             <Font size="14.0" />
-         </font></Button>
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.4957483112812042" />
+               </color>
+            </DropShadow>
+         </effect></Button>
          <ImageView fitHeight="62.0" fitWidth="57.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="14.0">
              <image>
                  <Image url="@../img/icon2.png" />
@@ -34,25 +42,25 @@
              <children>
                  <Label text="ID：" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
-                  <Font size="15.0" />
+                  <Font size="20.0" />
                </font></Label>
                  <Label fx:id="id" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
-                  <Font size="15.0" />
+                  <Font size="20.0" />
                </font></Label>
             <Label text="部门：" textFill="WHITE" GridPane.halignment="RIGHT">
                <font>
-                  <Font size="15.0" />
+                  <Font size="20.0" />
                </font>
             </Label>
             <Label fx:id="part" text="Label" textFill="WHITE" GridPane.columnIndex="1">
                <font>
-                  <Font size="15.0" />
+                  <Font size="20.0" />
                </font>
             </Label>
              </children>
          </GridPane>
-      <Text layoutX="96.0" layoutY="55.0" stroke="WHITE" strokeWidth="0.3" text="人事工资管理系统" wrappingWidth="265.0">
+      <Text layoutX="96.0" layoutY="55.0" stroke="WHITE" strokeWidth="0.2" text="人事工资管理系统" wrappingWidth="265.0">
          <font>
             <Font name="Microsoft YaHei Bold" size="31.0" />
          </font>
@@ -69,9 +77,9 @@
                         <Color red="0.41547271609306335" green="0.5937504172325134" blue="0.7605262994766235" />
                      </color>
                   </Stop>
-                  <Stop offset="0.3667066399414849">
+                  <Stop offset="0.16608198225028661">
                      <color>
-                        <Color red="0.4180000126361847" green="0.5946999788284302" blue="0.7599999904632568" />
+                        <Color red="0.3108333349227905" green="0.6573852300643921" blue="0.9815789461135864" />
                      </color>
                   </Stop>
                   <Stop offset="0.9999999542465096">
@@ -92,6 +100,13 @@
                </stops>
             </LinearGradient>
          </fill>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.301870733499527" />
+               </color>
+            </DropShadow>
+         </effect>
       </Text>
    </children>
 </AnchorPane>

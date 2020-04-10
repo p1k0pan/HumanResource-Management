@@ -2,6 +2,7 @@
 
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -18,37 +19,49 @@
          <RowConstraints maxHeight="321.0" minHeight="10.0" prefHeight="321.0" vgrow="SOMETIMES" />
      </rowConstraints>
      <children>
-         <Label onMouseClicked="#showMan" text="&gt;人员管理" textFill="#c9c9c9" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <Label fx:id="l2" alignment="CENTER" onMouseClicked="#showMan" onMouseEntered="#getGlow2" onMouseExited="#shutGlow2" prefHeight="83.0" prefWidth="128.0" style="-fx-background-color: null;" text="&gt;人员管理" textFill="#c9c9c9" GridPane.halignment="CENTER" GridPane.rowIndex="2">
              <font>
                  <Font size="17.0" />
              </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <Glow />
+         </effect>
       </Label>
-         <Label onMouseClicked="#showSalary" text="&gt;工资管理" textFill="#c9c9c9" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <Label fx:id="l3" alignment="CENTER" onMouseClicked="#showSalary" onMouseEntered="#getGlow3" onMouseExited="#shutGlow3" prefHeight="89.0" prefWidth="128.0" style="-fx-background-color: null;" text="&gt;工资管理" textFill="#c9c9c9" GridPane.halignment="CENTER" GridPane.rowIndex="3">
              <font>
                  <Font size="17.0" />
              </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <Glow />
+         </effect>
       </Label>
-         <Label onMouseClicked="#showStatistic" text="&gt;工资统计" textFill="#c9c9c9" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <Label fx:id="l4" alignment="CENTER" onMouseClicked="#showStatistic" onMouseEntered="#showGlow4" onMouseExited="#shutGlow4" prefHeight="100.0" prefWidth="128.0" style="-fx-background-color: null;" text="&gt;工资统计" textFill="#c9c9c9" GridPane.halignment="CENTER" GridPane.rowIndex="4">
              <font>
                  <Font size="17.0" />
              </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <Glow />
+         </effect>
       </Label>
-      <Label onMouseClicked="#showHome" text="&gt;主 页" textFill="#c9c9c9e8" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+      <Label fx:id="l1" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#showHome" onMouseEntered="#getGlow1" onMouseExited="#shutGlow1" prefHeight="83.0" prefWidth="128.0" style="-fx-background-color: null;" text="&gt;主 页" textAlignment="CENTER" textFill="#c9c9c9e8" GridPane.halignment="CENTER" GridPane.rowIndex="1">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
          <font>
             <Font size="17.0" />
          </font>
+         <effect>
+            <Glow />
+         </effect>
       </Label>
      </children>
  </GridPane>

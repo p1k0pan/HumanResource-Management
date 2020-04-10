@@ -31,8 +31,8 @@
                   </Button>
                   <Label text="密码" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
                   <Label text="用户名" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-                  <PasswordField fx:id="text_pass" prefHeight="10.0" prefWidth="176.0" promptText="请输入密码" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                  <TextField fx:id="text_name" promptText="请输入ID" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                  <PasswordField fx:id="text_pass" prefHeight="10.0" prefWidth="176.0" promptText="请输入密码" stylesheets="@../css/textfield.css" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                  <TextField fx:id="text_name" promptText="请输入ID" stylesheets="@../css/textfield.css" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP" />
                   <Label text="登   录" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                      <font>
                         <Font name="System Bold" size="20.0" />

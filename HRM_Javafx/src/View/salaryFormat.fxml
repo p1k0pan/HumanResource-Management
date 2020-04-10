@@ -2,7 +2,9 @@
 
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane id="an" prefHeight="542.0" prefWidth="813.0" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conSalaryFormat">
@@ -25,6 +27,9 @@
                   <TableColumn fx:id="self_col" minWidth="0.0" prefWidth="99.0" text="个人&#10;所得税" />
                   <TableColumn fx:id="total_col" text="总收入" />
               </columns>
+               <effect>
+                  <DropShadow />
+               </effect>
             </TableView>
          </children>
       </VBox>
@@ -34,7 +39,14 @@
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
-         </cursor></Button>
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.4991496503353119" />
+               </color>
+            </DropShadow>
+         </effect></Button>
       <Button fx:id="export" layoutX="274.0" layoutY="475.0" mnemonicParsing="false" onAction="#export" prefHeight="30.0" prefWidth="90.0" stylesheets="@../css/button.css" text="导 出" textFill="WHITE">
          <font>
             <Font size="15.0" />
@@ -42,6 +54,13 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.4991496503353119" />
+               </color>
+            </DropShadow>
+         </effect>
       </Button>
    </children>
 </AnchorPane>

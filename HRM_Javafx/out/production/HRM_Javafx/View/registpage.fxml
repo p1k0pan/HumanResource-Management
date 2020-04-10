@@ -20,8 +20,8 @@
                   <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="60.999999999999986" vgrow="SOMETIMES" />
                 <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="41.19999999999999" vgrow="SOMETIMES" />
                 <RowConstraints maxHeight="166.0" minHeight="1.5999999999999943" prefHeight="6.800000000000011" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="209.0" minHeight="10.0" prefHeight="57.599999999999994" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="40.599999999999994" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="209.0" minHeight="10.0" prefHeight="64.6" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="31.80000000000001" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="82.19998474121093" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
@@ -33,8 +33,8 @@
                   </Button>
                   <Label text="确认密码" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
                   <Label text="用户名" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-                  <PasswordField fx:id="text_pass1" prefHeight="10.0" prefWidth="176.0" promptText="请确认密码" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
-                  <TextField fx:id="text_name2" promptText="请输入ID" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                  <PasswordField fx:id="text_pass1" prefHeight="10.0" prefWidth="176.0" promptText="请确认密码" stylesheets="@../css/textfield.css" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+                  <TextField fx:id="text_name2" promptText="请输入ID" stylesheets="@../css/textfield.css" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP" />
                   <Label text="注   册" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                      <font>
                         <Font name="System Bold" size="20.0" />
@@ -46,7 +46,7 @@
                      </font>
                   </Label>
                   <Label text="密码" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP" />
-                  <PasswordField fx:id="text_pass2" promptText="请输入密码" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+                  <PasswordField fx:id="text_pass2" promptText="请输入密码" stylesheets="@../css/textfield.css" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="TOP" />
                   <Label fx:id="userconfirm" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                      <font>
                         <Font size="12.0" />

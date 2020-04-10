@@ -2,7 +2,9 @@
 
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
 <VBox id="vbox" fx:id="vbox" prefHeight="402.0" prefWidth="616.0" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.addcon">
@@ -47,19 +49,19 @@
                      <children>
                         <Label text="年 龄：" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                            <font>
-                              <Font name="Microsoft YaHei" size="18.0" />
+                              <Font name="Microsoft YaHei" size="15.0" />
                            </font></Label>
                         <Label text="职 位：" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                            <font>
-                              <Font name="Microsoft YaHei" size="18.0" />
+                              <Font name="Microsoft YaHei" size="15.0" />
                            </font></Label>
                         <Label text="职 称：" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
                            <font>
-                              <Font name="Microsoft YaHei" size="18.0" />
+                              <Font name="Microsoft YaHei" size="15.0" />
                            </font></Label>
                         <Label text="入职时间：" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="15.0" />
                            </font>
                         </Label>
                         <Label text="●" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
@@ -90,49 +92,63 @@
                         <Button mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="88.0" stylesheets="@../css/button.css" text="返 回" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="HAND" />
-                           </cursor></Button>
+                           </cursor>
+                           <effect>
+                              <DropShadow height="27.11" radius="13.315" spread="0.04" width="28.15">
+                                 <color>
+                                    <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.5025510191917419" />
+                                 </color>
+                              </DropShadow>
+                           </effect></Button>
                         <Button fx:id="confirm" mnemonicParsing="false" onAction="#addConfirm" prefHeight="29.0" prefWidth="87.0" stylesheets="@../css/button.css" text="确认添加" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="HAND" />
-                           </cursor></Button>
+                           </cursor>
+                           <effect>
+                              <DropShadow height="27.11" radius="13.315" spread="0.04" width="28.15">
+                                 <color>
+                                    <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.5025510191917419" />
+                                 </color>
+                              </DropShadow>
+                           </effect></Button>
                         <Label text="职务工资：" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                            <font>
-                              <Font name="Microsoft YaHei" size="18.0" />
+                              <Font name="Microsoft YaHei" size="15.0" />
                            </font>
                         </Label>
                         <Label text="职务津贴：" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                            <font>
-                              <Font name="Microsoft YaHei" size="18.0" />
+                              <Font name="Microsoft YaHei" size="15.0" />
                            </font>
                         </Label>
                         <Label text="各类补助：" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
                            <font>
-                              <Font name="Microsoft YaHei" size="18.0" />
+                              <Font name="Microsoft YaHei" size="15.0" />
                            </font>
                         </Label>
                         <Label text="政府津贴：" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
                            <font>
-                              <Font name="Microsoft YaHei" size="18.0" />
+                              <Font name="Microsoft YaHei" size="15.0" />
                            </font>
                         </Label>
                         <Label text="ID：" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                            <font>
-                              <Font name="Microsoft YaHei" size="18.0" />
+                              <Font name="Microsoft YaHei" size="15.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                        <TextField fx:id="position" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                        <TextField fx:id="title" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                        <TextField fx:id="entry" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                        <TextField fx:id="id" prefHeight="23.0" prefWidth="109.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                        <TextField fx:id="salbasic" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                        <TextField fx:id="salpos" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                        <TextField fx:id="salother" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                        <TextField fx:id="salgov" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-                        <TextField fx:id="age" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="name" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="position" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="title" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <TextField fx:id="entry" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <TextField fx:id="id" prefHeight="23.0" prefWidth="109.0" stylesheets="@../css/textfield.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <TextField fx:id="salbasic" stylesheets="@../css/textfield.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <TextField fx:id="salpos" stylesheets="@../css/textfield.css" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <TextField fx:id="salother" stylesheets="@../css/textfield.css" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <TextField fx:id="salgov" stylesheets="@../css/textfield.css" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                        <TextField fx:id="age" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                         <Label text="姓 名：" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="15.0" />
                            </font>
                         </Label>
                      </children>
