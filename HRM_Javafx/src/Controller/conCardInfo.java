@@ -24,8 +24,6 @@ public class conCardInfo {
     @FXML
     public GridPane picture;
     @FXML
-    public Label quit_retire;
-    @FXML
     public Label age;
     @FXML
     public Label position;
@@ -44,6 +42,10 @@ public class conCardInfo {
     @FXML
     private void initialize() throws IOException, SQLException {
 
+        if(StageManagement.headpart.equals("管理部"))
+        {
+            modi.setVisible(false);
+        }
         // 如果有头像系统，则图片的二进制保存在数据库中，所有的VBOX，label和布局都要重新new
         StageManagement.CONTROLLER.put("card",this);
     }

@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.print.PrinterJob;
 import javafx.scene.SnapshotParameters;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -26,6 +27,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class conSalaryFormat {
+    @FXML
+    private Button print;
+    @FXML
+    private Button export;
     @FXML
     private Label name;
     @FXML

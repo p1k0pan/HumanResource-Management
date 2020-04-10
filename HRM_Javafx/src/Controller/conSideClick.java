@@ -2,6 +2,7 @@ package Controller;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import utils.StageManagement;
 
@@ -28,7 +29,7 @@ public class conSideClick {
 
     public void showHome(MouseEvent mouseEvent) throws IOException {
         conLoad cl=(conLoad) StageManagement.CONTROLLER.get("centerboard");
-        VBox c_right= FXMLLoader.load(getClass().getResource("/View/home.fxml"));
+        AnchorPane c_right= FXMLLoader.load(getClass().getResource("/View/home.fxml"));
         cl.center.setCenter(c_right);
     }
 }

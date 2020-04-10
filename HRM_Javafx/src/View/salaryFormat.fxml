@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="607.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conSalaryFormat">
+<AnchorPane id="an" prefHeight="542.0" prefWidth="813.0" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conSalaryFormat">
    <children>
       <VBox fx:id="vbox" layoutY="125.0">
          <children>
@@ -27,14 +28,20 @@
             </TableView>
          </children>
       </VBox>
-      <Button fx:id="print" layoutX="445.0" layoutY="475.0" mnemonicParsing="false" onAction="#Print" prefHeight="15.0" prefWidth="89.0" text=" 打 印">
+      <Button fx:id="print" layoutX="445.0" layoutY="475.0" mnemonicParsing="false" onAction="#Print" prefHeight="15.0" prefWidth="89.0" stylesheets="@../css/button.css" text=" 打 印" textFill="WHITE">
          <font>
             <Font size="14.0" />
-         </font></Button>
-      <Button layoutX="274.0" layoutY="475.0" mnemonicParsing="false" onAction="#export" prefHeight="30.0" prefWidth="90.0" text="导 出">
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="export" layoutX="274.0" layoutY="475.0" mnemonicParsing="false" onAction="#export" prefHeight="30.0" prefWidth="90.0" stylesheets="@../css/button.css" text="导 出" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
    </children>
 </AnchorPane>

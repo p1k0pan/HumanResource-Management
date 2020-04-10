@@ -21,7 +21,6 @@ import java.sql.SQLException;
 
 public class conLoginPage {
 
-    public ToggleGroup groupLog= new ToggleGroup();
     public String nameLog="";
     public String passLog="";
     public String priLog="人事部";
@@ -49,11 +48,12 @@ public class conLoginPage {
         guanli.setToggleGroup(group);
         renshi.setSelected(true);
         try {
-            groupLog.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
+            group.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
                 @Override
                 public void changed(ObservableValue<? extends Toggle> changed, Toggle oldVal, Toggle newVal) {
                     RadioButton temp_rb = (RadioButton) newVal;
                     priLog = temp_rb.getText();
+                    System.out.println(priLog);
                 }
             });
         } catch (NullPointerException e) {
@@ -69,6 +69,8 @@ public class conLoginPage {
     public void Log() throws SQLException, IOException {
         passLog = text_pass.getText();
         nameLog = text_name.getText();
+        StageManagement.headid=nameLog;
+        StageManagement.headpart=priLog;
         StageManagement.CONTROLLER.put("log",this);
         utils.loginConfirm.confirm(nameLog, passLog, priLog);
 

@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox fx:id="vbox" prefHeight="648.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StatisticCon">
+<VBox id="vbox" fx:id="vbox" prefHeight="648.0" prefWidth="1152.0" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StatisticCon">
    <children>
       <GridPane>
          <columnConstraints>
@@ -21,7 +21,7 @@
             </Label>
          </children>
       </GridPane>
-      <TabPane prefHeight="585.0" prefWidth="1152.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane prefHeight="585.0" prefWidth="1152.0" stylesheets="@../css/background.css" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab fx:id="tab1" text="总体直方图" />
           <Tab fx:id="tab2" text="职称直方图" />

@@ -14,4 +14,7 @@ public class StageManagement {
     public static String sqlquery;
     public static Map<String, Object> SINGLE=new HashMap<String, Object>();
     public static boolean ynflag; //y-true , n-false
+    public static String headid;
+    public static String headpart;
+
 }

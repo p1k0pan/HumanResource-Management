@@ -1,10 +1,13 @@
 package Controller;
 
-import utils.StageManagement;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import utils.StageManagement;
 
 import java.io.IOException;
 
@@ -31,7 +34,18 @@ public class conShowAlert {
         else if(StageManagement.message=="登陆成功" ){
             Stage priStage= StageManagement.STAGE.get("home");
             priStage.close();
+            Stage newstage=new Stage();
+
+            Parent root1 = FXMLLoader.load(getClass().getResource("/View/blankBoard.fxml"));
+            newstage.setScene(new Scene(root1));
+            newstage.setTitle("人事工资管理系统");
+            StageManagement.STAGE.put("home",newstage);
+            newstage.setMaximized(true);
+            newstage.setMinHeight(400);
+            newstage.setMinWidth(850);
+            newstage.show();
         }
+
         else if(StageManagement.message=="此用户还没有注册" ) {
 
             conLoginPage clp=(conLoginPage) StageManagement.CONTROLLER.get("log");

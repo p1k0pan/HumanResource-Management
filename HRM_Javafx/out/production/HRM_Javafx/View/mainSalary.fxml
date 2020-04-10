@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conMainSalary">
+<VBox id="vbox" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conMainSalary">
    <children>
       <HBox fx:id="hbox" prefHeight="648.0" prefWidth="1152.0">
          <children>
@@ -18,12 +17,12 @@
                         <Font name="SimSun" size="23.0" />
                      </font>
                   </Label>
-                  <Label layoutX="527.0" layoutY="14.0" prefHeight="59.0" prefWidth="123.0" text="工资管理">
+                  <Label layoutX="411.0" layoutY="14.0" prefHeight="59.0" prefWidth="123.0" text="工资管理">
                      <font>
                         <Font name="Microsoft YaHei" size="30.0" />
                      </font>
                   </Label>
-                  <Button fx:id="backbtn" layoutX="537.0" layoutY="281.0" mnemonicParsing="false" onAction="#backToSearch" prefHeight="35.0" prefWidth="33.0">
+                  <Button fx:id="backbtn" layoutX="537.0" layoutY="281.0" mnemonicParsing="false" onAction="#backToSearch" prefHeight="35.0" prefWidth="33.0" textFill="WHITE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
@@ -66,7 +65,7 @@
                         <Cursor fx:constant="TEXT" />
                      </cursor>
                   </TextField>
-                  <Button mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="93.0" text="搜 索" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                  <Button mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="93.0" stylesheets="@../css/button.css" text="搜 索" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
                      <font>
                         <Font name="Microsoft YaHei" size="17.0" />
                      </font>
@@ -87,7 +86,7 @@
                         <Font size="19.0" />
                      </font>
                   </Label>
-                  <Button fx:id="generad" mnemonicParsing="false" onAction="#generad" prefHeight="30.0" prefWidth="103.0" text="生 成" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                  <Button fx:id="generad" mnemonicParsing="false" onAction="#generad" prefHeight="30.0" prefWidth="103.0" stylesheets="@../css/button.css" text="生 成" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -95,7 +94,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#refresh" prefHeight="30.0" prefWidth="93.0" text="重 置" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                  <Button mnemonicParsing="false" onAction="#refresh" prefHeight="30.0" prefWidth="93.0" stylesheets="@../css/button.css" text="重 置" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>

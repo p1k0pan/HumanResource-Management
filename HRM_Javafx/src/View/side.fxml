@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane prefHeight="648" prefWidth="128" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conSideClick">
+<GridPane id="side" prefHeight="760.0" prefWidth="128" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conSideClick">
      <columnConstraints>
          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="141.0" />
      </columnConstraints>
@@ -19,36 +18,36 @@
          <RowConstraints maxHeight="321.0" minHeight="10.0" prefHeight="321.0" vgrow="SOMETIMES" />
      </rowConstraints>
      <children>
-         <Label onMouseClicked="#showMan" text="人员管理" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <Label onMouseClicked="#showMan" text="&gt;人员管理" textFill="#c9c9c9" GridPane.halignment="CENTER" GridPane.rowIndex="2">
              <font>
-                 <Font size="24.0" />
+                 <Font size="17.0" />
              </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-         <Label onMouseClicked="#showSalary" text="工资管理" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <Label onMouseClicked="#showSalary" text="&gt;工资管理" textFill="#c9c9c9" GridPane.halignment="CENTER" GridPane.rowIndex="3">
              <font>
-                 <Font size="24.0" />
+                 <Font size="17.0" />
              </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-         <Label onMouseClicked="#showStatistic" text="工资统计" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <Label onMouseClicked="#showStatistic" text="&gt;工资统计" textFill="#c9c9c9" GridPane.halignment="CENTER" GridPane.rowIndex="4">
              <font>
-                 <Font size="24.0" />
+                 <Font size="17.0" />
              </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-      <Label onMouseClicked="#showHome" text="主 页" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+      <Label onMouseClicked="#showHome" text="&gt;主 页" textFill="#c9c9c9e8" GridPane.halignment="CENTER" GridPane.rowIndex="1">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
          <font>
-            <Font size="24.0" />
+            <Font size="17.0" />
          </font>
       </Label>
      </children>

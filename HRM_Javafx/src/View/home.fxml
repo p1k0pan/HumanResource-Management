@@ -6,9 +6,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="anchorPane" maxHeight="648.0" maxWidth="1152.0" minHeight="648.0" minWidth="1152.0" prefHeight="648.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeCon">
+
+<AnchorPane id="an" fx:id="anchorPane" maxHeight="648.0" maxWidth="1152.0" minHeight="648.0" minWidth="1152.0" prefHeight="648.0" prefWidth="1152.0" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeCon">
    <children>
-      <ImageView fitHeight="210.0" fitWidth="508.0" layoutX="75.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="233.0" fitWidth="564.0" layoutX="90.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/wallhaven-md6578.jpg" />
          </image>

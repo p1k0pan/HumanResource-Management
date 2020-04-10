@@ -1,16 +1,18 @@
 package Controller;
 
-import store.AlertStage;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
+import store.AlertStage;
 import utils.StageManagement;
 
 import java.io.IOException;
@@ -21,6 +23,8 @@ public class conManManage {
 //    @FXML
 //    private ScrollPane sp;
 
+    @FXML
+    private Button addbtn;
     @FXML
     private ScrollPane sp;
     @FXML
@@ -59,6 +63,10 @@ public class conManManage {
 
     @FXML
     private void initialize() throws IOException {
+        if(StageManagement.headpart.equals("管理部"))
+        {
+            addbtn.setVisible(false);
+        }
         StageManagement.sqlquery="SELECT id,name FROM staff ";
        showGridpane();
         cbb.getItems().addAll(
@@ -138,5 +146,10 @@ public class conManManage {
         showGridpane();
         textsearch.setText("");
         cbb.getSelectionModel().clearSelection();
+    }
+
+    public void add(ActionEvent actionEvent) throws IOException {
+
+        VBox top = FXMLLoader.load(getClass().getResource("/View/add.fxml"));
     }
 }

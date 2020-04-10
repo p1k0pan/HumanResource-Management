@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conCardInfo">
+<VBox id="vbox" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conCardInfo">
    <children>
       <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
@@ -19,10 +19,13 @@
                 <RowConstraints maxHeight="195.4" minHeight="10.0" prefHeight="151.99998474121094" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="modi" mnemonicParsing="false" onAction="#modify" prefHeight="19.0" prefWidth="79.0" text=" 修 改" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                  <Button fx:id="modi" mnemonicParsing="false" onAction="#modify" prefHeight="19.0" prefWidth="79.0" stylesheets="@../css/button.css" text=" 修 改" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
                      <font>
                         <Font size="15.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                </children>
             </GridPane>
@@ -109,8 +112,14 @@
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Button mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="84.0" text="返 回" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                        <Button fx:id="confirm" disable="true" mnemonicParsing="false" onAction="#modifyConfirm" prefHeight="34.0" prefWidth="87.0" text="确认修改" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="84.0" stylesheets="@../css/button.css" text="返 回" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="confirm" disable="true" mnemonicParsing="false" onAction="#modifyConfirm" prefHeight="34.0" prefWidth="87.0" stylesheets="@../css/button.css" text="确认修改" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
                         <Label fx:id="age" GridPane.columnIndex="2" GridPane.rowIndex="1">
                            <font>
                               <Font name="Microsoft YaHei" size="18.0" />

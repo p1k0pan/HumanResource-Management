@@ -24,7 +24,12 @@ public class loginConfirm {
 
         else{
                 ResultSet resultSet = selectSQLCommand.OptionDate("select * from account where id="+name);
-                if(resultSet.next()) {
+                System.out.println(name+password+pri);
+            if(resultSet.next()) {
+
+                System.out.println(resultSet.getString("password"));
+                System.out.println(resultSet.getString("id"));
+                System.out.println(resultSet.getString("priority"));
                     if(resultSet.getString("password")==null)
                     {
                         StageManagement.message="此用户还没有注册";
