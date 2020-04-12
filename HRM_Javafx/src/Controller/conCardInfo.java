@@ -1,5 +1,7 @@
 package Controller;
 
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import store.AlertStage;
 import com.mysql.cj.jdbc.exceptions.MysqlDataTruncation;
 import dao.updateSQLCommand;
@@ -17,6 +19,8 @@ import java.sql.SQLException;
 import java.util.Calendar;
 
 public class conCardInfo {
+    @FXML
+    public Button back;
     @FXML
     public Button modi;
     @FXML
@@ -42,6 +46,24 @@ public class conCardInfo {
     @FXML
     private void initialize() throws IOException, SQLException {
 
+        Image btnImg3 = new Image("/img/返回.png");
+        ImageView imageView3 = new ImageView(btnImg3);
+        imageView3.setFitHeight(20);
+        imageView3.setFitWidth(20);
+        //给按钮设置图标
+        back.setGraphic(imageView3);
+        Image btnImg2 = new Image("/img/修改.png");
+        ImageView imageView2 = new ImageView(btnImg2);
+        imageView2.setFitHeight(20);
+        imageView2.setFitWidth(20);
+        //给按钮设置图标
+        modi.setGraphic(imageView2);
+        Image btnImg = new Image("/img/确认.png");
+        ImageView imageView = new ImageView(btnImg);
+        imageView.setFitHeight(20);
+        imageView.setFitWidth(20);
+        //给按钮设置图标
+        confirm.setGraphic(imageView);
         if(StageManagement.headpart.equals("管理部"))
         {
             modi.setVisible(false);

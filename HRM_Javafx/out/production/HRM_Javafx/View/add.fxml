@@ -89,7 +89,7 @@
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Button mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="88.0" stylesheets="@../css/button.css" text="返 回" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                        <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="88.0" stylesheets="@../css/button.css" text="返 回" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>

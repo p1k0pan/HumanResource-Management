@@ -14,6 +14,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -71,6 +73,16 @@ public class conSalaryFormat {
 
     @FXML
     private void initialize() throws IOException, SQLException {
+        Image btnImg2 = new Image("/img/打印.png");
+        ImageView imageView2 = new ImageView(btnImg2);
+        imageView2.setFitHeight(20);
+        imageView2.setFitWidth(20);
+        print.setGraphic(imageView2);
+        Image btnImg = new Image("/img/导出.png");
+        ImageView imageView = new ImageView(btnImg);
+        imageView.setFitHeight(20);
+        imageView.setFitWidth(20);
+        export.setGraphic(imageView);
         name.setText(StageManagement.singlename + "的本月工资单");
         vbox.setAlignment(Pos.CENTER);
         ResultSet resultSet = selectSQLCommand.OptionDate(StageManagement.sqlquery);

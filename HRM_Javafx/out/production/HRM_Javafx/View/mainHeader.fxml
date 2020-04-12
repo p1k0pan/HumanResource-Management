@@ -10,7 +10,7 @@
 
 <AnchorPane id="anchorpane" prefHeight="180.0" prefWidth="1280.0" stylesheets="@../css/mainhead.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.exitMaincon">
    <children>
-         <Button fx:id="exit" layoutX="1062.0" layoutY="27.0" mnemonicParsing="false" onAction="#exit" prefHeight="32.0" prefWidth="103.0" stylesheets="@../css/button.css" text="退出系统" textFill="WHITE" AnchorPane.rightAnchor="114.79999999999995" AnchorPane.topAnchor="27.0">
+         <Button fx:id="exit" layoutX="1104.0" layoutY="27.0" mnemonicParsing="false" onAction="#exit" prefHeight="32.0" prefWidth="103.0" stylesheets="@../css/button.css" text="退出系统" textFill="WHITE" AnchorPane.rightAnchor="72.79999999999995" AnchorPane.topAnchor="27.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -42,25 +42,25 @@
              <children>
                  <Label text="ID：" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
-                  <Font size="15.0" />
+                  <Font size="20.0" />
                </font></Label>
                  <Label fx:id="id" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
-                  <Font size="15.0" />
+                  <Font size="20.0" />
                </font></Label>
             <Label text="部门：" textFill="WHITE" GridPane.halignment="RIGHT">
                <font>
-                  <Font size="15.0" />
+                  <Font size="20.0" />
                </font>
             </Label>
             <Label fx:id="part" text="Label" textFill="WHITE" GridPane.columnIndex="1">
                <font>
-                  <Font size="15.0" />
+                  <Font size="20.0" />
                </font>
             </Label>
              </children>
          </GridPane>
-      <Text layoutX="96.0" layoutY="55.0" stroke="WHITE" strokeWidth="0.3" text="人事工资管理系统" wrappingWidth="265.0">
+      <Text layoutX="96.0" layoutY="55.0" stroke="WHITE" strokeWidth="0.2" text="人事工资管理系统" wrappingWidth="265.0">
          <font>
             <Font name="Microsoft YaHei Bold" size="31.0" />
          </font>
@@ -103,7 +103,7 @@
          <effect>
             <DropShadow>
                <color>
-                  <Color opacity="0.43877550959587097" />
+                  <Color opacity="0.301870733499527" />
                </color>
             </DropShadow>
          </effect>

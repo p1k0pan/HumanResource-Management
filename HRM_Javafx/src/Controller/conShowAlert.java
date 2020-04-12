@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import utils.StageManagement;
 
@@ -43,6 +44,7 @@ public class conShowAlert {
             newstage.setMaximized(true);
             newstage.setMinHeight(400);
             newstage.setMinWidth(850);
+            newstage.getIcons().add(new Image("/img/icon2.png"));
             newstage.show();
         }
 

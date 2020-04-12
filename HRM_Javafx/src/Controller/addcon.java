@@ -4,8 +4,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -46,7 +49,24 @@ public class addcon {
     @FXML
     private VBox vbox;
     @FXML
+    private Button confirm;
+    @FXML
+    private Button back;
+    @FXML
     private void initialize() throws IOException, SQLException {
+        Image btnImg = new Image("/img/添加.png");
+        ImageView imageView = new ImageView(btnImg);
+        imageView.setFitHeight(20);
+        imageView.setFitWidth(20);
+        //给按钮设置图标
+        confirm.setGraphic(imageView);
+        Image btnImg2 = new Image("/img/添加.png");
+        ImageView imageView2 = new ImageView(btnImg);
+        imageView2.setFitHeight(20);
+        imageView2.setFitWidth(20);
+        //给按钮设置图标
+        back.setGraphic(imageView2);
+
         Stage stage = new Stage();
         VBox root = new VBox();
         root.setId("root");

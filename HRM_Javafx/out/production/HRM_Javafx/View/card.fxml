@@ -21,10 +21,7 @@
                 <RowConstraints maxHeight="195.4" minHeight="10.0" prefHeight="151.99998474121094" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="modi" mnemonicParsing="false" onAction="#modify" prefHeight="19.0" prefWidth="79.0" stylesheets="@../css/button.css" text=" 修 改" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
+                  <Button fx:id="modi" mnemonicParsing="false" onAction="#modify" prefHeight="30.0" prefWidth="91.0" stylesheets="@../css/button.css" text=" 修 改" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -121,7 +118,7 @@
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Button mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="84.0" stylesheets="@../css/button.css" text="返 回" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                        <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="84.0" stylesheets="@../css/button.css" text="返 回" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>

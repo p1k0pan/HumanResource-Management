@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
@@ -7,14 +8,17 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="an" prefHeight="542.0" prefWidth="813.0" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conSalaryFormat">
+<AnchorPane id="an" prefHeight="489.0" prefWidth="822.0" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conSalaryFormat">
    <children>
-      <VBox fx:id="vbox" layoutY="125.0">
+      <VBox fx:id="vbox" layoutY="119.0">
          <children>
             <Label fx:id="name" text="Label">
                <font>
                   <Font size="20.0" />
                </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
             </Label>
             <TableView fx:id="tableView" prefHeight="274.0" prefWidth="821.0">
               <columns>
@@ -25,15 +29,18 @@
                   <TableColumn fx:id="other_col" prefWidth="117.0" text="其他&#10;补助" />
                   <TableColumn fx:id="gov_col" prefWidth="108.0" text="政府&#10;补贴" />
                   <TableColumn fx:id="self_col" minWidth="0.0" prefWidth="99.0" text="个人&#10;所得税" />
-                  <TableColumn fx:id="total_col" text="总收入" />
+                  <TableColumn fx:id="total_col" prefWidth="79.20003662109377" text="总收入" />
               </columns>
                <effect>
-                  <DropShadow />
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.49574828147888184" />
+                     </color></DropShadow>
                </effect>
             </TableView>
          </children>
       </VBox>
-      <Button fx:id="print" layoutX="445.0" layoutY="475.0" mnemonicParsing="false" onAction="#Print" prefHeight="15.0" prefWidth="89.0" stylesheets="@../css/button.css" text=" 打 印" textFill="WHITE">
+      <Button fx:id="print" layoutX="437.0" layoutY="444.0" mnemonicParsing="false" onAction="#Print" prefHeight="15.0" prefWidth="89.0" stylesheets="@../css/button.css" text=" 打 印" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
@@ -47,7 +54,7 @@
                </color>
             </DropShadow>
          </effect></Button>
-      <Button fx:id="export" layoutX="274.0" layoutY="475.0" mnemonicParsing="false" onAction="#export" prefHeight="30.0" prefWidth="90.0" stylesheets="@../css/button.css" text="导 出" textFill="WHITE">
+      <Button fx:id="export" layoutX="278.0" layoutY="444.0" mnemonicParsing="false" onAction="#export" prefHeight="30.0" prefWidth="90.0" stylesheets="@../css/button.css" text="导 出" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>

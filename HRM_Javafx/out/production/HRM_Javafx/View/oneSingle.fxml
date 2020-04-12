@@ -5,6 +5,7 @@
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
 <VBox id="vbox" fx:id="wholePic" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="135.0" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.conOneSingle">
@@ -48,6 +49,9 @@
       </GridPane>
    </children>
    <effect>
-      <DropShadow />
+      <DropShadow>
+         <color>
+            <Color opacity="0.4991496503353119" />
+         </color></DropShadow>
    </effect>
 </VBox>
