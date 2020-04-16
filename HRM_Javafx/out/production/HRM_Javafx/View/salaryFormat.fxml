@@ -54,7 +54,7 @@
                </color>
             </DropShadow>
          </effect></Button>
-      <Button fx:id="export" layoutX="278.0" layoutY="444.0" mnemonicParsing="false" onAction="#export" prefHeight="30.0" prefWidth="90.0" stylesheets="@../css/button.css" text="导 出" textFill="WHITE">
+      <Button fx:id="export" layoutX="278.0" layoutY="444.0" mnemonicParsing="false" onAction="#saveExcel" prefHeight="30.0" prefWidth="90.0" stylesheets="@../css/button.css" text="导 出" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>

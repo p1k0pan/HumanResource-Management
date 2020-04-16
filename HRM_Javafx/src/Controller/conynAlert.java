@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import utils.StageManagement;
 
+import java.io.IOException;
+
 public class conynAlert {
     @FXML
     private Label message;
@@ -15,6 +17,10 @@ public class conynAlert {
     @FXML
     private Button no;
 
+    @FXML
+    private void initialize() throws IOException {
+        message.setText(StageManagement.ynMessage);
+    }
     public void confirm(ActionEvent actionEvent) {
         StageManagement.ynflag=true;
         Stage stage = (Stage)yes.getScene().getWindow();

@@ -79,4 +79,22 @@ public class singleSalary {
     public String getName() {
         return name;
     }
+    public String get(int column)
+    {
+        String str="";
+        switch (column)
+        {
+            case 0:str=getId();break;
+            case 1:str=getName();break;
+            case 2:str=Double.toString(getBasic());break;
+            case 3:str=Double.toString(getPos());break;
+            case 4:str=Double.toString(getSubsidy());break;
+            case 5:str=Double.toString(getGov());break;
+            case 6:str=Double.toString(getSelf());break;
+            case 7:str=Double.toString(getTotal());break;
+        }
+        return str;
+
+    }
+
 }

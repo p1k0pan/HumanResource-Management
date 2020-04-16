@@ -14,6 +14,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
@@ -123,7 +124,7 @@ public class conMainSalary {
     }
 
     public void backToSearch(ActionEvent actionEvent) {
-        hbox.getChildren().remove(1);
+        hbox.getChildren().remove(2);
         hbox.getChildren().add(gridpane);
     }
 
@@ -154,12 +155,12 @@ public class conMainSalary {
 
         ListView<String> listView = new ListView<>(strList);
         an.getChildren().add(listView);
-        AnchorPane.setTopAnchor(listView,110.0);
+        AnchorPane.setTopAnchor(listView,50.0);
         AnchorPane.setBottomAnchor(listView,0.0);
         AnchorPane.setRightAnchor(listView,150.0);listView.getSelectionModel().selectedItemProperty().addListener(
                 (ObservableValue<? extends String> observable, String oldValue, String newValue) ->{
 
-                    hbox.getChildren().remove(1);
+                    hbox.getChildren().remove(2);
                     String id=newValue.substring(2,6);
                     String name=newValue.substring(16);
                     StageManagement.singleid=id;
@@ -181,9 +182,14 @@ public class conMainSalary {
 //            search();
 //        for (KeyCode c : KeyCode.values())
 //            System.out.println(c);
-        if(keycodMap.map.contains(keyEvent.getCode().getChar())){
+//        System.out.println(keyEvent.getCode().getChar());
+        if(keycodMap.map.contains(keyEvent.getCode().getChar()) || keyEvent.getCode()== KeyCode.ENTER || keyEvent.getCode()==KeyCode.BACK_SPACE){
             searchver2();
-            System.out.println("ok");
+            if("".equals(textsearch.getText()))
+            {
+                String sql="SELECT id,name FROM staff ";
+                showList(sql);
+            }
         }
 
 //        System.out.println(keyEvent.getCode().getChar());

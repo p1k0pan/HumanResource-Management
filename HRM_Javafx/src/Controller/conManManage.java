@@ -11,6 +11,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -125,12 +126,6 @@ public class conManManage {
         VBox top = FXMLLoader.load(getClass().getResource("/View/add.fxml"));
     }
 
-    public void pressSearch(KeyEvent keyEvent) throws IOException {
-        if(keycodMap.map.contains(keyEvent.getCode().getChar())){
-            searchver2();
-            System.out.println("ok");
-        }
-    }
     public void searchver1() throws IOException {
 
         if("".equals(textsearch.getText()) && "".equals(choosen))
@@ -230,4 +225,18 @@ public class conManManage {
         }
 
     }
+
+    public void pressSearch(KeyEvent keyEvent) throws IOException {
+//        System.out.println(keyEvent.getCode().getChar());
+        if(keycodMap.map.contains(keyEvent.getCode().getChar()) || keyEvent.getCode()== KeyCode.ENTER || keyEvent.getCode()==KeyCode.BACK_SPACE){
+            searchver2();
+            if("".equals(textsearch.getText()))
+            {
+                StageManagement.sqlquery="SELECT id,name FROM staff ";
+                showGridpane();
+            }
+        }
+        }
+
+
 }

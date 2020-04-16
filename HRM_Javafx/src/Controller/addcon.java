@@ -4,9 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
@@ -25,15 +23,12 @@ public class addcon {
     @FXML
     private TextField name;
     @FXML
-    private TextField position;
+    private ComboBox position;
     @FXML
-    private TextField title;
+    private ComboBox title;
     @FXML
-    private TextField entry;
-    @FXML
-    private TextField quit;
-    @FXML
-    private TextField retire;
+    private DatePicker entry;
+
     @FXML
     private TextField id;
     @FXML
@@ -54,13 +49,24 @@ public class addcon {
     private Button back;
     @FXML
     private void initialize() throws IOException, SQLException {
+
+        position.getItems().addAll( "正式员工",
+                "经理",
+                "主管",
+                "退休员工",
+                "临时工");
+        title.getItems().addAll( "高级",
+                "低级",
+                "中级"
+                );
+
         Image btnImg = new Image("/img/添加.png");
         ImageView imageView = new ImageView(btnImg);
         imageView.setFitHeight(20);
         imageView.setFitWidth(20);
         //给按钮设置图标
         confirm.setGraphic(imageView);
-        Image btnImg2 = new Image("/img/添加.png");
+        Image btnImg2 = new Image("/img/返回.png");
         ImageView imageView2 = new ImageView(btnImg);
         imageView2.setFitHeight(20);
         imageView2.setFitWidth(20);
@@ -82,7 +88,7 @@ public class addcon {
     }
     public void addConfirm(ActionEvent actionEvent) throws IOException, SQLException {
 
-         if(name.getText().equals("") || position.getText().equals("")||title.getText().equals("")||entry.getText().equals("")||id.getText().equals("")||salbasic.getText().equals("")||salgov.getText().equals("")||salother.getText().equals("")||salpos.getText().equals(""))
+         if(name.getText().equals("") || "".equals((String)position.getValue())||"".equals(title.getValue())||entry.getValue()==null||id.getText().equals("")||salbasic.getText().equals("")||salgov.getText().equals("")||salother.getText().equals("")||salpos.getText().equals(""))
         {
             StageManagement.message="信息为空";
             store.AlertStage.onedisplay();
@@ -90,7 +96,7 @@ public class addcon {
         else
         {
             String sql="insert into staff (id,name,age,entry,position,title) values ("+id.getText()+",\""+name.getText()+"\","+
-                    age.getText()+",\""+entry.getText()+"\",\""+position.getText()+"\",\""+title.getText()+"\""+")";
+                    age.getText()+",\""+entry.getValue().toString()+"\",\""+(String)position.getValue()+"\",\""+(String)title.getValue()+"\""+")";
             int len=dao.insertSQLCommand.OptionDate(sql);
             System.out.println(sql);
 
@@ -110,10 +116,10 @@ public class addcon {
                 store.AlertStage.onedisplay();
                 age.clear();
                 name.clear();
-                position.clear();
-                title.clear();
-                entry.clear();
-                id.clear();
+                position.setValue("");
+                title.setValue("");
+                entry.setValue(null);
+//                id.clear();
                 salpos.clear();
                 salbasic.clear();
                 salother.clear();

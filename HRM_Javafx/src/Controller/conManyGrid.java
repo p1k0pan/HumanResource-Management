@@ -50,7 +50,8 @@ public class conManyGrid {
 //                StageManagement.SINGLE.put(totalid.get(num),cos);
 
                 mainGrid.add(name, col, row);
-                mainGrid.setPadding(new Insets(5,0,0,0));
+                mainGrid.setPadding(new Insets(20,0,0,0));
+
                 num++;
 //                System.out.println(name.getPrefHeight());
 //                System.out.println(name.getPrefWidth());

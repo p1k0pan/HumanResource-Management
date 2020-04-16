@@ -51,7 +51,7 @@
    <effect>
       <DropShadow>
          <color>
-            <Color red="0.36052632331848145" green="0.3571881055831909" blue="0.3571881055831909" opacity="0.5199999809265137" />
+            <Color red="0.36000001430511475" green="0.36000001430511475" blue="0.36000001430511475" opacity="0.15221089124679565" />
          </color></DropShadow>
    </effect>
 </VBox>

@@ -16,5 +16,6 @@ public class StageManagement {
     public static boolean ynflag; //y-true , n-false
     public static String headid;
     public static String headpart;
+    public static String ynMessage;
 
 }

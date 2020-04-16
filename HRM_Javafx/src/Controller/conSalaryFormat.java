@@ -1,5 +1,8 @@
 package Controller;
 
+import com.gembox.spreadsheet.ExcelFile;
+import com.gembox.spreadsheet.ExcelWorksheet;
+import com.gembox.spreadsheet.SpreadsheetInfo;
 import dao.selectSQLCommand;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -18,7 +21,9 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import store.AlertStage;
 import utils.StageManagement;
 import utils.singleSalary;
 
@@ -158,5 +163,40 @@ public class conSalaryFormat {
         store.AlertStage.onedisplay();
         tableView.setItems(data);
 
+
+    }
+
+    public void saveExcel(ActionEvent event) throws IOException {
+        SpreadsheetInfo.setLicense("FREE-LIMITED-KEY");
+        ExcelFile file = new ExcelFile();
+        ExcelWorksheet worksheet = file.addWorksheet("sheet");
+        worksheet.getCell(0, 0).setValue("工资表");
+        for(int i=0;i<tableView.getColumns().size();i++)
+        {
+            TableColumn tc=(TableColumn)tableView.getColumns().get(i);
+            worksheet.getCell(1,i).setValue(tc.getText());
+        }
+        for (int row = 0; row < tableView.getItems().size(); row++) {
+            singleSalary cells = (singleSalary) tableView.getItems().get(row);
+            for (int column = 0; column < 8; column++) {
+                if (cells.get(column) != "")
+                    worksheet.getCell(row+2, column).setValue(cells.get(column));
+            }
+        }
+
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("XLSX files (*.xlsx)", "*.xlsx"),
+                new FileChooser.ExtensionFilter("XLS files (*.xls)", "*.xls"),
+                new FileChooser.ExtensionFilter("ODS files (*.ods)", "*.ods"),
+                new FileChooser.ExtensionFilter("CSV files (*.csv)", "*.csv"),
+                new FileChooser.ExtensionFilter("HTML files (*.html)", "*.html")
+        );
+        File saveFile = fileChooser.showSaveDialog(tableView.getScene().getWindow());
+        fileChooser.setTitle("选择保存路径");
+        fileChooser.setInitialFileName("Untitle.xlsx");
+        file.save(saveFile.getAbsolutePath());
+        StageManagement.message="保存成功";
+        AlertStage.onedisplay();
     }
 }

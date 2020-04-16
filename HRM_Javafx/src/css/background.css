@@ -14,12 +14,14 @@
 {
     -fx-background-color: linear-gradient(to bottom, #0d1c2b, #595657);;
 }
-.tab-pane>*.tab-header-area>*.tab-header-background
-{
-    -fx-background-color: -fx-outer-border, -fx-text-box-border, white;
-    -fx-border-width: 0px;
-}
+
 #title{
     -fx-stroke-width: 5;
     -fx-stroke: gray;
+}
+.tab{
+    /*-fx-background-color: #ffffff;*/
+}
+.tab-pane *.tab-header-background{
+    -fx-background-color: transparent;
 }

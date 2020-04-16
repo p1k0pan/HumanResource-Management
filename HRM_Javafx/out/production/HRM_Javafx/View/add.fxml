@@ -89,7 +89,7 @@
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="88.0" stylesheets="@../css/button.css" text="返 回" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                        <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="105.0" stylesheets="@../css/button.css" text="返 回" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -100,7 +100,7 @@
                                  </color>
                               </DropShadow>
                            </effect></Button>
-                        <Button fx:id="confirm" mnemonicParsing="false" onAction="#addConfirm" prefHeight="29.0" prefWidth="87.0" stylesheets="@../css/button.css" text="确认添加" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                        <Button fx:id="confirm" mnemonicParsing="false" onAction="#addConfirm" prefHeight="30.0" prefWidth="102.0" stylesheets="@../css/button.css" text="确认添加" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -137,9 +137,6 @@
                            </font>
                         </Label>
                         <TextField fx:id="name" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                        <TextField fx:id="position" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                        <TextField fx:id="title" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                        <TextField fx:id="entry" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="5" />
                         <TextField fx:id="id" prefHeight="23.0" prefWidth="109.0" stylesheets="@../css/textfield.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
                         <TextField fx:id="salbasic" stylesheets="@../css/textfield.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />
                         <TextField fx:id="salpos" stylesheets="@../css/textfield.css" GridPane.columnIndex="4" GridPane.rowIndex="3" />
@@ -151,6 +148,9 @@
                               <Font size="15.0" />
                            </font>
                         </Label>
+                        <ComboBox fx:id="position" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <DatePicker fx:id="entry" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <ComboBox fx:id="title" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
                      </children>
                   </GridPane>
                </children>

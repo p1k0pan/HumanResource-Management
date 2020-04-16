@@ -35,6 +35,7 @@ public class conOneSingle  {
     public void showCard(MouseEvent mouseEvent) throws IOException, SQLException {
         //打开card窗口
         Stage stage = new Stage();
+        StageManagement.STAGE.put("cardwindow",stage);
         StageManagement.singleid = id.getText();
         VBox root = new VBox();
         root.setId("root");
@@ -84,6 +85,7 @@ public class conOneSingle  {
                 cci.retire.setText(rs.getString("retire"));
                 stop = Integer.parseInt(cci.retire.getText().trim().substring(0, 4));
             }
+            cci.workyear.setText(Integer.toString(stop - start));
 
         }
 

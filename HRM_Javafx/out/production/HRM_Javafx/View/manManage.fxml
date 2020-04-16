@@ -37,7 +37,7 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></ComboBox>
-            <TextField fx:id="textsearch" onKeyPressed="#pressSearch" promptText="输入名字或数字，同时输入无效" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <TextField fx:id="textsearch" onKeyReleased="#pressSearch" promptText="输入名字或数字，同时输入无效" stylesheets="@../css/textfield.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font size="15.0" />
                </font>

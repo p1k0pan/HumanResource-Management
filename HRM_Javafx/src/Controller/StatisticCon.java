@@ -160,19 +160,19 @@ public class StatisticCon {
 
         XYChart.Series<String, Number> series2 = new XYChart.Series<>();
         series2.setName("中级");
-        series1.getData().add(new XYChart.Data<>(b1, salaryZhongji(b1)));
-        series1.getData().add(new XYChart.Data<>(b2, salaryZhongji(b2)));
-        series1.getData().add(new XYChart.Data<>(b3, salaryZhongji(b3)));
-        series1.getData().add(new XYChart.Data<>(b4, salaryZhongji(b4)));
-        series1.getData().add(new XYChart.Data<>(b5, salaryZhongji(b5)));
+        series2.getData().add(new XYChart.Data<>(b1, salaryZhongji(b1)));
+        series2.getData().add(new XYChart.Data<>(b2, salaryZhongji(b2)));
+        series2.getData().add(new XYChart.Data<>(b3, salaryZhongji(b3)));
+        series2.getData().add(new XYChart.Data<>(b4, salaryZhongji(b4)));
+        series2.getData().add(new XYChart.Data<>(b5, salaryZhongji(b5)));
 
         XYChart.Series<String, Number> series3 = new XYChart.Series<>();
         series3.setName("低级");
-        series1.getData().add(new XYChart.Data<>(b1, salaryDiji(b1)));
-        series1.getData().add(new XYChart.Data<>(b2, salaryDiji(b2)));
-        series1.getData().add(new XYChart.Data<>(b3, salaryDiji(b3)));
-        series1.getData().add(new XYChart.Data<>(b4, salaryDiji(b4)));
-        series1.getData().add(new XYChart.Data<>(b5, salaryDiji(b5)));
+        series3.getData().add(new XYChart.Data<>(b1, salaryDiji(b1)));
+        series3.getData().add(new XYChart.Data<>(b2, salaryDiji(b2)));
+        series3.getData().add(new XYChart.Data<>(b3, salaryDiji(b3)));
+        series3.getData().add(new XYChart.Data<>(b4, salaryDiji(b4)));
+        series3.getData().add(new XYChart.Data<>(b5, salaryDiji(b5)));
 
 
         barChart.getData().addAll(series1, series2, series3);

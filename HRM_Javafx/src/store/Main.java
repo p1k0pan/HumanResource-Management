@@ -21,7 +21,7 @@ public class Main extends Application {
 //        primaryStage.setMinHeight(400);
 //        primaryStage.setMinWidth(850);
 //        primaryStage.show();
-
+//
         VBox root=new VBox();
         root.setId("root");
         root.getStylesheets().add(Main.class.getResource("/css/closing.css").toString());

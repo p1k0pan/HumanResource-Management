@@ -16,15 +16,16 @@
       </Label>
       <HBox fx:id="hbox" prefHeight="648.0" prefWidth="1152.0">
          <children>
-            <AnchorPane id="an" fx:id="an" maxHeight="648.0" maxWidth="701.0" minHeight="648.0" minWidth="608.0" prefHeight="648.0" prefWidth="608.0" stylesheets="@../css/borderline.css">
+            <AnchorPane prefHeight="648.0" prefWidth="77.0" />
+            <AnchorPane id="an" fx:id="an" maxHeight="648.0" maxWidth="701.0" minHeight="648.0" minWidth="608.0" prefHeight="648.0" prefWidth="641.0" stylesheets="@../css/borderline.css">
                <children>
-                  <Separator layoutX="458.0" layoutY="72.0" orientation="VERTICAL" prefHeight="578.0" prefWidth="48.0" AnchorPane.rightAnchor="-10.0" />
-                  <Label layoutX="319.0" layoutY="73.0" text="员工名单">
+                  <Separator layoutX="458.0" layoutY="2.0" orientation="VERTICAL" prefHeight="648.0" prefWidth="48.0" AnchorPane.rightAnchor="-10.0" />
+                  <Label layoutX="310.0" layoutY="23.0" text="员工名单">
                      <font>
                         <Font name="SimSun" size="23.0" />
                      </font>
                   </Label>
-                  <Button fx:id="backbtn" layoutX="537.0" layoutY="281.0" mnemonicParsing="false" onAction="#backToSearch" prefHeight="35.0" prefWidth="33.0" textFill="WHITE">
+                  <Button fx:id="backbtn" layoutX="531.0" layoutY="187.0" mnemonicParsing="false" onAction="#backToSearch" prefHeight="35.0" prefWidth="33.0" textFill="WHITE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
@@ -36,11 +37,11 @@
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.0" minWidth="10.0" prefWidth="60.0" />
               </columnConstraints>
               <rowConstraints>
-                <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="163.2" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="244.0" minHeight="10.0" prefHeight="69.19999999999999" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="414.0" minHeight="10.0" prefHeight="51.99999999999997" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="414.0" minHeight="10.0" prefHeight="131.59999999999997" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="414.0" minHeight="10.0" prefHeight="74.39999999999998" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="244.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="414.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="414.0" minHeight="10.0" prefHeight="155.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="414.0" minHeight="10.0" prefHeight="112.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="414.0" minHeight="10.0" prefHeight="138.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
@@ -59,7 +60,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ComboBox>
-                  <TextField fx:id="textsearch" onKeyPressed="#pressSearch" promptText="输入名字或数字，同时输入无效" stylesheets="@../css/textfield.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <TextField fx:id="textsearch" onKeyReleased="#pressSearch" promptText="输入名字或数字，同时输入无效" stylesheets="@../css/textfield.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
                         <Font size="15.0" />
                      </font>
